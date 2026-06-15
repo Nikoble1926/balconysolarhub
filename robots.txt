@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://balconysolarhub.co.uk/sitemap.xml

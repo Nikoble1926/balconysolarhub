@@ -1,0 +1,41 @@
+# BalconySolarHub
+
+> Independent UK guide tracking the BS 7671 Amendment 4 transition for balcony / plug-in solar. Plain-English coverage of legality, the free G98 DNO notification, kit picks, savings at the current ~27p/kWh price cap, and the gap between "ratified" and "DIY-installable".
+
+Updated 15 June 2026.
+
+## Editorial principle
+
+We do NOT publish "just plug it in, fully legal now" copy. The UK is in a real, documented transition window between BS 7671 Amendment 4 (in force 15 April 2026) and the expected BSI product standard for DIY plug-in kits (~July 2026, transitional period through ~October 2026). When we don't know something, we say so.
+
+## Key pages
+
+- [Is plug-in solar legal in the UK? (2026)](https://balconysolarhub.co.uk/legal/): Flagship explainer of BS 7671 Amendment 4, what changed on 15 April 2026, what's still pending, the 800W cap, RCD and anti-islanding rules.
+- [G98 DNO notification walkthrough](https://balconysolarhub.co.uk/g98-notification/): Step-by-step UK DNO walkthrough — free, online, ~10 minutes. Covers UK Power Networks, SSEN, NGED, Northern Powergrid, Electricity North West, SP Energy Networks.
+- [The 800W limit explained](https://balconysolarhub.co.uk/guides/800w-limit/): Why the UK cap is 800W AC inverter output (not panel watts) and what happens above it.
+- [Best UK balcony solar kits 2026](https://balconysolarhub.co.uk/best-kits-2026/): Honest UK availability notes on EcoFlow STREAM, Anker SOLIX Solarbank 2, Zendure SolarFlow 800, APsystems EZ1-M, Hoymiles HMS-800.
+- [UK savings calculator (£)](https://balconysolarhub.co.uk/savings-calculator/): Free interactive calculator defaulting to the current UK energy price cap (~27p/kWh). Self-consumption model, honest assumptions.
+- [Can you plug solar into a normal socket?](https://balconysolarhub.co.uk/guides/normal-socket/): RCD, anti-islanding, outdoor-rated sockets, and why "just plug it in" isn't yet the legal default route.
+- [Plug-in battery storage UK](https://balconysolarhub.co.uk/guides/battery-storage/): Anker SOLIX Solarbank 2, Zendure SolarFlow 800, EcoFlow STREAM Ultra — how AC-coupled batteries fit the 800W rule.
+- [Cost & payback (UK)](https://balconysolarhub.co.uk/guides/cost-payback/): Real UK numbers — kit £200–£1,000, 600–900 kWh/year, ~£130–£200/year savings, 3–5 year payback.
+- [UK balcony solar FAQ](https://balconysolarhub.co.uk/faq/): Quick honest answers on legality, planning, leasehold, SEG, MCS, batteries.
+
+## About
+
+- [About & methodology](https://balconysolarhub.co.uk/about/): Editorial principles, funding (Amazon UK Associates, no paid placement, no in-kind product).
+- [Contact](https://balconysolarhub.co.uk/contact/): hello@balconysolarhub.co.uk
+- [Affiliate disclosure](https://balconysolarhub.co.uk/affiliate-disclosure/)
+- [Privacy](https://balconysolarhub.co.uk/privacy/)
+
+## Verified UK facts
+
+- BS 7671 Amendment 4: ratified 16 March 2026, in force 15 April 2026. Reclassifies ≤800W microgeneration as a portable appliance.
+- Cap: 800W AC, single-phase, type-approved anti-islanding inverter, RCD-protected final circuit.
+- G98 Connect & Notify: free online DNO notification, not an approval gate.
+- BSI product standard for DIY plug-in kits: pending, expected ~July 2026; transitional period through ~October 2026.
+- UK electricity price cap: ~27–28p/kWh (mid-2026). SEG generally not available for plug-in installs.
+- Typical UK 800W kit: ~600–900 kWh/year, ~£130–£200 savings, 3–5 year payback for bare panels.
+
+## License
+
+Independent UK guidance. Free to read with attribution. Informational, not legal or electrical advice — confirm current rules with your DNO and a CPS-registered electrician before installing equipment.

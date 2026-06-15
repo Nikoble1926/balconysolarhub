@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en-GB"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>UK Balcony Solar Savings Calculator (£) — 2026 Energy Price Cap</title>
+<meta name="description" content="Free interactive UK calculator: estimate yearly savings and payback time of a balcony / plug-in solar kit at the current ~27p/kWh energy price cap. Self-consumption model, honest assumptions.">
+<link rel="canonical" href="https://balconysolarhub.co.uk/savings-calculator/">
+<meta property="og:type" content="website"><meta property="og:title" content="UK Balcony Solar Savings Calculator (£)">
+<meta property="og:description" content="Estimate yearly savings and payback in £ at the current UK energy price cap (~27p/kWh)."><meta property="og:url" content="https://balconysolarhub.co.uk/savings-calculator/"><meta property="og:image" content="https://balconysolarhub.co.uk/og-image.png">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="UK Balcony Solar Savings Calculator (£)"><meta name="twitter:description" content="Estimate yearly savings and payback in £."><meta name="twitter:image" content="https://balconysolarhub.co.uk/og-image.png">
+<meta name="robots" content="index,follow"><link rel="stylesheet" href="/style.css">
+<script>
+function fmt(n){return n.toLocaleString('en-GB');}
+function calc(){
+ var rate=Math.max(0,parseFloat(document.getElementById('rate').value)||0)/100;
+ var w=Math.max(0,parseFloat(document.getElementById('watts').value)||0);
+ var price=Math.max(0,parseFloat(document.getElementById('price').value)||0);
+ var perW=parseFloat(document.getElementById('perw').value); if(isNaN(perW))perW=0.95;
+ perW=Math.min(1.3,Math.max(0.5,perW));
+ var kwh=Math.round(w*perW);
+ var save=kwh*rate;
+ var pay=save>0?(price/save):0;
+ document.getElementById('o_kwh').textContent=fmt(kwh)+' kWh';
+ document.getElementById('o_save').textContent='£'+fmt(Math.round(save));
+ document.getElementById('o_pay').textContent=(pay>0?pay.toFixed(1)+' yrs':'—');
+}
+document.addEventListener('DOMContentLoaded',function(){
+ ['rate','watts','price','perw'].forEach(function(id){document.getElementById(id).addEventListener('input',calc);});
+ function clampField(){var w=document.getElementById('watts');w.value=Math.max(0,parseFloat(w.value)||0);var pr=document.getElementById('price');pr.value=Math.max(0,parseFloat(pr.value)||0);var pw=document.getElementById('perw');var v=parseFloat(pw.value);if(isNaN(v))v=0.95;pw.value=Math.min(1.3,Math.max(0.5,v));calc();}
+ ['watts','price','perw'].forEach(function(id){document.getElementById(id).addEventListener('blur',clampField);});
+ calc();
+});
+</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"WebApplication","name":"UK Balcony Solar Savings Calculator","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"GBP"},"inLanguage":"en-GB"},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://balconysolarhub.co.uk/"},{"@type":"ListItem","position":2,"name":"Savings Calculator","item":"https://balconysolarhub.co.uk/savings-calculator/"}]}]</script></head><body>
+<header class="site"><div class="wrap bar">
+<a class="logo" href="/"><span class="sun"></span>BalconySolarHub</a>
+<nav class="main"><a href="/">Home</a><a href="/legal/">UK Legal</a><a href="/g98-notification/">G98 Walkthrough</a><a href="/best-kits-2026/">Best Kits</a><a href="/savings-calculator/">Calculator</a><a href="/guides/800w-limit/">800W Limit</a><a href="/faq/">FAQ</a><a href="/about/">About</a></nav></div></header>
+<main>
+<div class="wrap"><div class="crumbs"><a href="/">Home</a> &rsaquo; Savings Calculator</div></div>
+<section><div class="wrap">
+<h1>UK balcony solar savings &amp; payback calculator</h1>
+<p class="lead" style="color:var(--mut);font-size:19px">Estimate how much an 800W balcony solar kit could save a UK flat per year &mdash; and how fast it pays for itself &mdash; at the current energy price cap.</p>
+
+<div class="answer" style="margin:0 0 22px;padding:14px 16px;background:#f0f9ff;border-left:4px solid #0ea5e9;border-radius:6px;font-size:17px;line-height:1.55"><strong>Quick answer:</strong> At the current UK energy price cap (~27&ndash;28p/kWh) an 800W balcony solar kit producing around 760 kWh/year saves roughly <strong>&pound;200/year</strong> through self-consumption, so a &pound;500 kit pays back in ~2.5 years and a &pound;1,000 system in ~5 years. Savings come from electricity you do not buy &mdash; not from exporting to the grid (SEG is rarely available on plug-in installs).</div>
+
+<div class="calc">
+<label for="rate">Your electricity rate (p/kWh)</label>
+<select id="rate">
+<option value="27">UK average (price cap ~27p/kWh)</option>
+<option value="24">Economy 7 / off-peak heavy household (~24p/kWh)</option>
+<option value="28">South East / London standard (~28p/kWh)</option>
+<option value="26">Scotland / Wales standard (~26p/kWh)</option>
+<option value="32">Fixed tariff high (~32p/kWh)</option>
+</select>
+<label for="watts">System size (W AC)</label>
+<input id="watts" type="number" value="800" min="100" max="800" step="50">
+<label for="price">Kit price (&pound;)</label>
+<input id="price" type="number" value="500" min="0" step="50">
+<label for="perw">Annual production per watt (kWh/W) &mdash; UK balcony installs are usually 0.7&ndash;1.1</label>
+<input id="perw" type="number" value="0.95" min="0.5" max="1.3" step="0.05">
+<div class="out" aria-live="polite">
+<div class="o"><div class="v" id="o_kwh">&mdash;</div><div class="l">Est. yearly production</div></div>
+<div class="o"><div class="v" id="o_save">&mdash;</div><div class="l">Est. yearly savings</div></div>
+<div class="o"><div class="v" id="o_pay">&mdash;</div><div class="l">Payback time</div></div>
+</div>
+</div>
+
+<div class="disc">Estimates only. Assumes <strong>100% self-consumption</strong> &mdash; every kWh produced is offset against your supplier&rsquo;s rate. In practice some daytime production may go to waste if your household is not drawing power at that moment; a battery (Anker SOLIX Solarbank, EcoFlow STREAM Ultra, Zendure SolarFlow) shifts that into evening use. SEG (Smart Export Guarantee) is generally not available for plug-in installs because they lack MCS certification, so we don&rsquo;t model export income.</div>
+
+<h2 style="margin-top:36px">How the math works</h2>
+<div class="article">
+<p>The calculator uses a deliberately simple, transparent model:</p>
+<ul>
+<li><strong>Yearly production</strong> = system AC watts &times; production-per-watt (kWh/W/yr). UK middle estimate is ~0.95 kWh/W for a well-placed south-facing balcony, ~0.7 kWh/W for a shaded or strongly east/west install, ~1.1 kWh/W for a tilted unshaded panel.</li>
+<li><strong>Yearly savings</strong> = production &times; your electricity rate. UK price cap unit rate is ~27p/kWh in mid-2026; fixed tariffs vary &pound;0.04&ndash;&pound;0.06 either side.</li>
+<li><strong>Payback</strong> = kit price &divide; yearly savings.</li>
+</ul>
+<p>The single biggest lever is your <strong>electricity rate</strong>, which is why UK plug-in solar payback is much faster than the global average. The 800W cap, plus modest UK insolation (~950&ndash;1,100 sun-hours/year in most of England), keeps yearly output around 600&ndash;900 kWh &mdash; making the &pound;500 kit + ~&pound;200/year savings the sweet-spot for most flats.</p>
+<p>Once you&rsquo;ve modelled the numbers, check our <a href="/best-kits-2026/">honest 2026 kit picks</a> and the <a href="/legal/">current UK legal status</a> before buying.</p>
+</div>
+
+</div></section></main>
+
+<footer class="site"><div class="wrap"><div class="cols">
+<div><h4>BalconySolarHub</h4><p class="tag" style="color:#9fb3c8">Independent, honest UK guidance for balcony / plug-in solar.</p></div>
+<div><h4>Start here</h4><ul>
+<li><a href="/legal/">Is plug-in solar legal in the UK?</a></li>
+<li><a href="/g98-notification/">G98 DNO notification walkthrough</a></li>
+<li><a href="/guides/800w-limit/">The 800W limit explained</a></li>
+<li><a href="/best-kits-2026/">Best UK balcony solar kits 2026</a></li>
+<li><a href="/savings-calculator/">Savings calculator (&pound;)</a></li>
+</ul></div>
+<div><h4>Learn</h4><ul>
+<li><a href="/guides/normal-socket/">Plug into a normal socket?</a></li>
+<li><a href="/guides/battery-storage/">Battery storage UK</a></li>
+<li><a href="/guides/cost-payback/">Cost &amp; payback (UK)</a></li>
+<li><a href="/faq/">FAQ</a></li>
+<li><a href="/about/">About &amp; methodology</a></li>
+</ul></div></div>
+<div class="fdisc">
+<p><strong>Affiliate disclosure:</strong> BalconySolarHub is reader-supported. If you buy through some links on our site, we may earn an affiliate commission at no extra cost to you. As a participant in the Amazon Associates programme (UK), we earn from qualifying purchases.</p>
+<p style="margin-bottom:8px"><a href="/privacy/">Privacy</a> &middot; <a href="/affiliate-disclosure/">Affiliate disclosure</a> &middot; <a href="/contact/">Contact</a> &middot; <a href="/about/">About</a></p>
+<p>Independent UK guidance. Plug-in solar regulations are moving fast in the UK &mdash; always confirm current rules with your DNO and a qualified electrician before installing equipment. Informational, not legal or electrical advice. &copy; 2026 BalconySolarHub.</p>
+</div></div></footer>
+</body></html>
