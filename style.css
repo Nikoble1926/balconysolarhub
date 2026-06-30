@@ -88,3 +88,28 @@ footer.site{position:relative}
 footer.site::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--gold),var(--teal),var(--sky))}
 .calc .o:hover{transform:translateY(-3px);box-shadow:var(--art-shadow)}
 /* ===== /Artistic upgrade v1 ===== */
+
+/* ===== Dark mode v1 (toggle) ===== */
+[data-theme="dark"]{--bg:#0d1117;--ink:#e6edf3;--mut:#9aa7b4;--soft:#161b22;--line:#27313d}
+[data-theme="dark"] body{background:var(--bg);color:var(--ink)}
+[data-theme="dark"] header.site{background:rgba(13,17,23,.92);border-bottom-color:var(--line)}
+[data-theme="dark"] .logo,[data-theme="dark"] nav.main a{color:var(--ink)}
+[data-theme="dark"] a{color:#7cc0ff}
+[data-theme="dark"] .card{background:#11161d;border-color:var(--line);box-shadow:0 1px 2px rgba(0,0,0,.4)}
+[data-theme="dark"] .card:hover{border-color:#33414f;box-shadow:0 12px 30px rgba(0,0,0,.5)}
+[data-theme="dark"] .hero{background:linear-gradient(160deg,#1a1606 0%,#0d1117 55%,#08201c 100%)}
+[data-theme="dark"] .soft{background:linear-gradient(180deg,#0f141b,#10171f)}
+[data-theme="dark"] .note{background:#0e1c2b!important;border-color:#1d3a52!important;color:#cfe3fb!important}
+[data-theme="dark"] .disc{background:#211c0c!important;border-color:#4a3d18!important;color:#e6d8a8!important}
+[data-theme="dark"] .answer{background:#0e1c2b!important;color:#dbe7f2!important}
+[data-theme="dark"] .badge{background:#3a2e0c;color:#ffd98a}
+[data-theme="dark"] .badge.g{background:#0f2a1c;color:#7fe3ab}
+[data-theme="dark"] .badge.w{background:#33240c;color:#ffcf8a}
+[data-theme="dark"] th{background:var(--soft)}
+[data-theme="dark"] th,[data-theme="dark"] td{border-color:var(--line)}
+[data-theme="dark"] .calc{background:#11161d;border-color:var(--line)}
+[data-theme="dark"] .calc select,[data-theme="dark"] .calc input,[data-theme="dark"] .email input{background:#0d1117;border-color:var(--line);color:var(--ink)}
+[data-theme="dark"] .calc .o{background:var(--soft)}
+[data-theme="dark"] .faq dd,[data-theme="dark"] .tag,[data-theme="dark"] .crumbs{color:var(--mut)}
+[data-theme="dark"] #themeToggle{color:var(--ink)}
+/* ===== /Dark mode v1 ===== */
