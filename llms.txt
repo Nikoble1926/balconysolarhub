@@ -2,11 +2,11 @@
 
 > Independent UK guide tracking the BS 7671 Amendment 4 transition for balcony / plug-in solar. Plain-English coverage of legality, the free G98 DNO notification, kit picks, savings at the current ~27p/kWh price cap, and the gap between "ratified" and "DIY-installable".
 
-Updated 15 June 2026.
+Updated 2 July 2026.
 
 ## Editorial principle
 
-We do NOT publish "just plug it in, fully legal now" copy. The UK is in a real, documented transition window between BS 7671 Amendment 4 (in force 15 April 2026) and the expected BSI product standard for DIY plug-in kits (~July 2026, transitional period through ~October 2026). When we don't know something, we say so.
+We do NOT publish "just plug it in, fully legal now" copy. The UK is in a real, documented transition window: BS 7671 Amendment 4 is in force (15 April 2026), and the government's legalisation route for DIY plug-in kits — a PSSR amendment plus the DESNZ Interim Product Specification v1.0 — finished consultation on 30 June 2026 (response summary expected ~22 July 2026; enduring BSI standard to follow; transitional period through ~October 2026). When we don't know something, we say so.
 
 ## Key pages
 
@@ -32,7 +32,7 @@ We do NOT publish "just plug it in, fully legal now" copy. The UK is in a real, 
 - BS 7671 Amendment 4: ratified 16 March 2026, in force 15 April 2026. Reclassifies ≤800W microgeneration as a portable appliance.
 - Cap: 800W AC, single-phase, type-approved anti-islanding inverter, RCD-protected final circuit.
 - G98 Connect & Notify: free online DNO notification, not an approval gate.
-- BSI product standard for DIY plug-in kits: pending, expected ~July 2026; transitional period through ~October 2026.
+- DIY plug-in solar: not legal yet. DESNZ consultation to legalise it (PSSR amendment + Interim Product Specification v1.0) ran 16–30 June 2026 and has closed; response summary expected ~22 July 2026. Enduring BSI standard to follow; transitional period through ~October 2026.
 - UK electricity price cap: ~27–28p/kWh (mid-2026). SEG generally not available for plug-in installs.
 - Typical UK 800W kit: ~600–900 kWh/year, ~£130–£200 savings, 3–5 year payback for bare panels.
 
