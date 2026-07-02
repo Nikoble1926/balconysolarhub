@@ -163,14 +163,14 @@ svg.lineart{width:100%;height:auto;display:block}
 .filmbox{border:1px solid var(--line);border-radius:16px;background:var(--card);padding:16px 16px 10px}
 .filmbox .label{display:flex;justify-content:space-between;align-items:center;margin-bottom:4px}
 .replay{border:1px solid var(--line);background:var(--chip);color:var(--ink);border-radius:999px;font-size:12px;padding:3px 12px;cursor:pointer}
-.f .draw{stroke-dasharray:1000;stroke-dashoffset:1000;transition:stroke-dashoffset 2.2s ease}
+.f .draw{stroke-dasharray:1000;stroke-dashoffset:1000;transition:stroke-dashoffset 1.1s ease}
 .f .on{stroke-dashoffset:0}
 .f .flow{stroke:var(--gold);stroke-width:2;fill:none;stroke-dasharray:4 7;opacity:0;transition:opacity .5s ease}
 .f .flow.on{opacity:1;animation:v2flow 1.2s linear infinite}
 @keyframes v2flow{to{stroke-dashoffset:-22}}
 .f .fade{opacity:0;transition:opacity .6s ease}
 .f .fade.on{opacity:1}
-.f .needle{transform-origin:86px 250px;transition:transform 2.5s ease}
+.f .needle{transform-origin:86px 250px;transition:transform 1.4s ease}
 .f .needle.on{transform:rotate(-55deg)}
 .f .sunspin{transform-origin:78px 46px;animation:v2spin 26s linear infinite}
 @keyframes v2spin{to{transform:rotate(360deg)}}
@@ -247,3 +247,55 @@ details.fold>.fold-body{padding:0 18px 16px;border-top:1px dashed var(--line)}
 [data-theme="dark"] .filmbox,[data-theme="dark"] .board .panel,[data-theme="dark"] .mc .panel,[data-theme="dark"] .cat,[data-theme="dark"] .kitrow,[data-theme="dark"] details.fold{background:var(--card);border-color:var(--line)}
 @media(max-width:900px){.board,.mc,.cats{grid-template-columns:1fr}.kitrow{grid-template-columns:1fr}.buycol .price{text-align:left}}
 /* ===== /Design v2 ===== */
+
+/* ===== Design v2.1 — frameless (no boxes, hairlines + whitespace only) ===== */
+.card,.filmbox,.board .panel,.mc .panel,.cat,details.fold,.kitrow{border:none!important;background:transparent!important;box-shadow:none!important;border-radius:0!important}
+.card:hover,.kitrow:hover{transform:none!important;box-shadow:none!important}
+.grid .card{border-top:1px solid var(--line)!important;padding:20px 2px 10px}
+.kitrow{border-top:1px solid var(--line)!important;padding:30px 2px;margin:0}
+.kitrow .rank{position:static;display:inline-block;background:transparent;color:var(--gold-d);padding:0;margin-bottom:6px}
+.board{gap:44px}.board .panel{padding:0}
+.mc{gap:44px}.mc .panel{padding:0}
+.cats{gap:36px 44px}.cat{padding:0}
+details.fold{border-top:1px dashed var(--line)!important;margin:10px 0 0}
+details.fold>summary{padding:12px 2px}
+details.fold>.fold-body{padding:0 2px 14px;border-top:none}
+.filmbox{padding:0}
+.answer{background:transparent!important;border:none!important;border-left:2px solid var(--sky)!important;border-radius:0!important;padding:2px 0 2px 16px!important;box-shadow:none!important}
+.note{background:transparent!important;border:none!important;border-left:2px solid var(--gold)!important;border-radius:0!important;padding:2px 0 2px 16px!important;box-shadow:none!important;color:var(--ink)!important}
+.disc{background:transparent!important;border:none!important;border-top:1px dashed var(--line)!important;border-radius:0!important;padding:12px 0 0!important;color:var(--mut)!important}
+.cta-buy,.email-capture{background:transparent!important;border:none!important;border-left:2px solid var(--gold)!important;border-radius:0!important;padding:2px 0 2px 16px!important}
+table{border:none}
+th,td{border:none;border-bottom:1px solid var(--line)}
+th{background:transparent;border-bottom:2px solid var(--ink)}
+.calc{border:none;background:transparent;box-shadow:none;padding:0}
+.calc .o{background:transparent;border:none;border-top:1px solid var(--line);border-radius:0}
+[data-theme="dark"] .answer,[data-theme="dark"] .note,[data-theme="dark"] .cta-buy,[data-theme="dark"] .email-capture{background:transparent!important;box-shadow:none!important}
+[data-theme="dark"] .disc{background:transparent!important;color:var(--mut)!important}
+[data-theme="dark"] .card,[data-theme="dark"] .filmbox,[data-theme="dark"] .board .panel,[data-theme="dark"] .mc .panel,[data-theme="dark"] .cat,[data-theme="dark"] details.fold,[data-theme="dark"] .kitrow,[data-theme="dark"] .calc{background:transparent!important;box-shadow:none!important}
+[data-theme="dark"] [style*="background:#fafafa"],[data-theme="dark"] [style*="background:#f0f7ff"],[data-theme="dark"] [style*="background:#f0f9ff"],[data-theme="dark"] [style*="background:#fff8e6"],[data-theme="dark"] [style*="background:#f8fafc"]{background:transparent!important}
+/* ===== /Design v2.1 frameless ===== */
+/* ===== MailerLite form skin — absorb into the design (frameless) ===== */
+.ml-embedded{margin:6px 0 0}
+.ml-form-embedContainer .ml-form-embedWrapper{background:transparent!important;border:none!important;border-radius:0!important;box-shadow:none!important;padding:0!important;width:100%!important;max-width:100%!important}
+.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody,
+.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody{padding:0!important;background:transparent!important}
+.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent,
+.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent p,
+.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent h4{color:var(--mut)!important;font-family:inherit!important;font-size:13.5px!important;text-align:left!important;margin:0 0 6px!important;padding:0!important}
+.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input,
+.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input{background:transparent!important;border:none!important;border-bottom:1.5px solid var(--line)!important;border-radius:0!important;color:var(--ink)!important;font-family:inherit!important;font-size:15px!important;padding:10px 2px!important;box-shadow:none!important;height:auto!important}
+.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input:focus,
+.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input:focus{border-bottom-color:var(--gold)!important;outline:none!important}
+.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody input::placeholder{color:var(--mut)!important;opacity:.8!important}
+.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit{margin:12px 0 0!important;padding:0!important}
+.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button,
+.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button{background:#15803d!important;color:var(--bg)!important;border:none!important;border-radius:8px!important;font-family:inherit!important;font-weight:600!important;font-size:14.5px!important;padding:11px 20px!important;height:auto!important;box-shadow:none!important;transition:opacity .15s ease,transform .15s ease!important}
+.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button:hover,
+.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button:hover{opacity:.9!important;transform:translateY(-2px)!important}
+.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent,
+.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p,
+.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent h4{color:var(--ok)!important;font-family:inherit!important;font-size:14.5px!important;text-align:left!important;margin:0!important}
+[data-theme="dark"] .ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input,
+[data-theme="dark"] .ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow input{color:var(--ink)!important;border-bottom-color:var(--line)!important}
+/* ===== /MailerLite form skin ===== */
