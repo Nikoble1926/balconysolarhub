@@ -1,0 +1,60 @@
+<!-- ============================================================
+DESNZ STANDBY DRAFT — SCENARIO B (DELAY / PARTIAL)
+NOT DEPLOYED. Lives in _drafts/ (not linked, not indexed).
+
+USE ON DECISION DAY (~22 Jul 2026) IF the primary gov.uk document shows:
+  - the consultation response is published but does NOT make plug-in solar
+    legal yet (further steps / legislative process still pending), OR
+  - a partial / conditional outcome, OR
+  - the timeline has slipped to a later date.
+
+This is NOT a new page. It is a set of ready-to-paste blocks that UPDATE
+existing pages. Fill placeholders ONLY from the primary gov.uk document
+(never press/Twitter — NH lesson). Keep visible text == JSON-LD FAQ.
+
+PLACEHOLDERS:
+  [[DATE]]          e.g. 22 July 2026 (date of the response)
+  [[WHAT_THEY_SAID]] e.g. published a summary of consultation responses and
+                    set out next steps
+  [[WHAT_PENDING]]  e.g. the PSSR amendment still has to be laid before
+                    Parliament
+  [[NEXT_MILESTONE]] e.g. the amendment is expected in autumn 2026
+  [[SOURCE_URL]]    the gov.uk publication URL
+
+TARGETS: /legal/index.html (blocks 1,2,3) and
+         /news/desnz-plug-in-solar-consultation-2026/index.html (block 4).
+After pasting: bump "Last verified"/"Updated" dates + dateModified in JSON-LD
+on both pages, then deploy + IndexNow + sitemap lastmod.
+============================================================ -->
+
+<!-- ==== BLOCK 1 — /legal/ : REPLACE the badge line (currently the <p> with
+     "Amendment 4 in force &mdash; DIY plug-in still pending") WITH: ==== -->
+<p><span class="badge w">DIY plug-in still pending &mdash; DESNZ response [[DATE]]</span> &nbsp; <span class="tag">BS 7671 Amendment 4</span> &nbsp; <span class="tag"><strong>Updated:</strong> [[DATE]]</span></p>
+
+<!-- ==== BLOCK 2 — /legal/ : REPLACE the existing quick-answer <div class="answer"> WITH: ==== -->
+<div class="answer" style="margin:14px 0 18px;padding:14px 16px;background:#f0f9ff;border-left:4px solid #0ea5e9;border-radius:6px;font-size:17px;line-height:1.55"><strong>Quick answer:</strong> DIY plug-in solar is <strong>still not legal</strong> in the UK. On <strong>[[DATE]]</strong> DESNZ [[WHAT_THEY_SAID]], but the change is not yet in force: [[WHAT_PENDING]]. The route remains a PSSR amendment plus the DESNZ interim product specification &mdash; <a href="/news/desnz-plug-in-solar-consultation-2026/">see the news page</a> and the <a href="[[SOURCE_URL]]" rel="noopener">DESNZ publication</a>. The cleanest legal route today is still an <strong>800W hardwired install by a CPS-registered electrician</strong> with a free G98 Connect &amp; Notify to your DNO. We update this page as soon as a firm in-force date is confirmed.</div>
+
+<!-- ==== BLOCK 3 — /legal/ : REPLACE the "30 Jun 2026" timeline <tr> AND ADD a new row
+     after it, so the tbody reads (edit the two rows below into the table): ==== -->
+<tr><td><strong>30 Jun 2026</strong></td><td>Consultation <em>closed</em> (23:59)</td><td>Consultation closed; DESNZ analysed the responses.</td></tr>
+<tr><td><strong>[[DATE]]</strong></td><td>DESNZ <em>response published</em></td><td>[[WHAT_THEY_SAID]]. Still not legal &mdash; [[WHAT_PENDING]]. [[NEXT_MILESTONE]].</td></tr>
+
+<!-- ==== BLOCK 4 — /news/desnz-plug-in-solar-consultation-2026/ : REPLACE the badge
+     "Consultation closed &mdash; not yet legal" line WITH, and update quick-answer
+     to reference [[DATE]]: ==== -->
+<p><span class="badge w">DESNZ response published [[DATE]] &mdash; not yet legal</span> &nbsp; <span class="tag">DESNZ / PSSR</span> &nbsp; <span class="tag"><strong>Updated:</strong> [[DATE]]</span></p>
+
+<!-- ==== BLOCK 5 — JSON-LD FAQ SYNC (both pages) ====
+For each visible change above, update the matching answer text inside the
+FAQPage JSON-LD so visible == structured data. Example for the /legal/
+"Is plug-in solar legal in the UK in 2026?" answer — set its text to reflect:
+"Not yet. On [[DATE]] DESNZ [[WHAT_THEY_SAID]]; the change is not yet in force
+([[WHAT_PENDING]]). [[NEXT_MILESTONE]]. Today the compliant route is an 800W
+hardwired install by a CPS-registered electrician with a free G98 notification."
+Also bump "dateModified" to [[DATE_ISO]] in the Article JSON-LD on both pages.
+============================================================ -->
+
+<!-- ==== NOTE — "what you can do meanwhile" is ALREADY covered on /legal/
+     (the 800W hardwired route + G98 sections). No new copy needed; the
+     quick-answer above points to it. Do NOT write "expected 22 July"
+     anywhere as a future date once [[DATE]] has passed. ==== -->

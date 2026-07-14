@@ -1,0 +1,53 @@
+============================================================
+DESNZ STANDBY DRAFT — MEDIA PITCH (email)
+NOT SENT. Nothing goes out without Nikos's explicit OK.
+Use ONLY in Scenario A (green) or a clearly newsworthy B.
+Fill placeholders ONLY from the primary gov.uk document.
+
+TARGETS (UK green/energy trade press — real press, not forums):
+  - Solar Power Portal (news@solarpowerportal.co.uk — verify current address)
+  - pv magazine UK
+  - Current± (Current News)
+  - The Eco Experts (editorial)
+NOTE: MoneySavingExpert forums are NOT press — reference only, do not pitch.
+
+PLACEHOLDERS: [[DATE]], [[WHAT_EXACTLY]], [[EFFECTIVE]], [[CAP_W]], [[SOURCE_URL]]
+============================================================
+
+SUBJECT: Plug-in solar in the UK — DESNZ [[WHAT_EXACTLY]] ([[DATE]])
+
+Hi [[FIRST_NAME]],
+
+Quick, no-fluff heads-up in case it's useful for coverage.
+
+On [[DATE]], DESNZ [[WHAT_EXACTLY]], following the 16–30 June consultation on
+legalising plug-in (balcony) solar via an amendment to the Plugs and Sockets
+(Safety) Regulations 1994 plus an interim product specification.
+
+The essentials, from the published document:
+  - What was announced: [[WHAT_EXACTLY]]
+  - Effective: [[EFFECTIVE]]
+  - Headline device limit: [[CAP_W]] (single phase, one per household,
+    BS 1363 plug + 5A fuse, no batteries — the German balcony-solar model)
+  - Primary source: [[SOURCE_URL]]
+
+Why it matters: the UK is one of the last major European markets without a
+plug-in solar route. This is the step that changes that — with an estimated
+28 million households potentially in scope over time.
+
+I run BalconySolarHub, an independent UK guide tracking this since the
+consultation opened. Happy to share our plain-English breakdown of the device
+limits and the 800W hardwired-vs-DIY distinction, or to be quoted on what it
+means for renters and flat-dwellers. Not selling anything — just close to the
+detail.
+
+Primary source and our summary:
+  - GOV.UK: [[SOURCE_URL]]
+  - Our page: https://balconysolarhub.co.uk/news/desnz-plug-in-solar-response-2026/
+
+Best,
+Nikos
+BalconySolarHub — https://balconysolarhub.co.uk
+
+--- Rules: honest framing only; never say "legal" unless the document makes
+it legal; one email per outlet; no follow-up spam; send ONLY after Nikos's OK.
