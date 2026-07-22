@@ -1,0 +1,76 @@
+============================================================
+DESNZ MEDIA PITCH — FILLED 22 July 2026 (Scenario A)
+STATUS: **NOT SENT.** Nothing goes out without Nikos's explicit OK.
+All facts below are taken from SI 2026 No. 848 as made. Claims that were in
+the template but are NOT stated in the legislation have been removed:
+  - "single phase, one per household, BS 1363 plug + 5A fuse, no batteries"
+    (these sit in the Interim Product Specification, not the regulations)
+  - "28 million households" (no source verified)
+  - consultation response figures (the GOV.UK page still shows the
+    consultation as open; no response document seen, so no numbers quoted)
+
+TARGETS (UK green/energy trade press):
+  - Solar Power Portal (news@solarpowerportal.co.uk — verify current address)
+  - pv magazine UK
+  - Current± (Current News)
+  - The Eco Experts (editorial)
+NOTE: MoneySavingExpert forums are NOT press — reference only, do not pitch.
+============================================================
+
+SUBJECT: Plug-in solar becomes legal in Britain on 27 August — regs made 16 July (SI 2026/848)
+
+Hi [[FIRST_NAME]],
+
+Quick, no-fluff heads-up in case it's useful for coverage.
+
+The regulations that open a legal route for plug-in (balcony) solar were made
+on 16 July 2026 and laid before Parliament on 17 July. They come into force on
+27 August 2026 — so this is a dated, concrete change, not a consultation step.
+
+The essentials, straight from the instrument:
+
+  - Instrument: The Plugs and Sockets etc. (Safety) Regulations 1994 and
+    Electricity Safety, Quality and Continuity Regulations 2002 (Amendment)
+    Regulations 2026 — SI 2026 No. 848
+  - Made 16 July 2026; laid before Parliament 17 July 2026
+  - In force: 27 August 2026
+  - What it does: PSSR reg 8 is amended so a notified body can approve a
+    standard plug for a "plug-in microgenerator" where it fails BS 1363 only
+    because BS 1363 restricts using a plug to connect a generating device.
+    ESQCR reg 22(1)(c) is replaced so such a device must not be installed or
+    operated unless it complies with the product specification.
+  - Device definition: solar (direct conversion of sunlight); maximum rated
+    AC output not exceeding 800W; connects to a low voltage consumer's
+    installation by standard plug and socket; operates in parallel with the
+    distributor's network; not designed to import electricity for storage
+    (beyond control/auxiliary functions the specification permits).
+  - The gatekeeper: Plug-in Solar Device Interim Product Specification,
+    version 2, published 16 July 2026.
+  - Extent: regs 1–2 England & Wales, Scotland, Northern Ireland;
+    reg 3 (ESQCR) England & Wales and Scotland.
+  - Primary source: https://www.legislation.gov.uk/uksi/2026/848/made
+
+The angle we think is under-covered: the in-force date is 27 August, but
+compliance is judged against Interim Product Specification v2 — and we are not
+aware of any product yet certified to it. So there is a real gap between "legal
+from 27 August" and "buyable, certified kit on a shelf". Anyone writing "legal
+now" or implying today's imported kits qualify is getting ahead of the document.
+
+I run BalconySolarHub, an independent UK guide that has tracked this since the
+consultation opened. Happy to share our plain-English breakdown, or to be quoted
+on what it means for renters and flat-dwellers, and on the 800W hardwired-vs-DIY
+distinction. Not selling anything — just close to the detail.
+
+Sources:
+  - Legislation: https://www.legislation.gov.uk/uksi/2026/848/made
+  - DESNZ consultation / where the specification is published:
+    https://www.gov.uk/government/consultations/plug-in-solar
+  - Our summary: https://balconysolarhub.co.uk/news/desnz-plug-in-solar-response-2026/
+
+Best,
+Nikos
+BalconySolarHub — https://balconysolarhub.co.uk
+
+--- Rules: honest framing only; never say "legal now" (it is legal FROM
+27 August 2026); one email per outlet; no follow-up spam; send ONLY after
+Nikos's explicit OK.

@@ -45,10 +45,10 @@ function initMini(){
 /* ── countdown to DESNZ response (~22 Jul 2026) ─────────────── */
 function initCountdown(){
   var el=document.getElementById('days');if(!el)return;
-  var d=Math.ceil((new Date('2026-07-22T00:00:00+01:00')-new Date())/86400000);
+  var d=Math.ceil((new Date('2026-08-27T00:00:00+01:00')-new Date())/86400000);
   if(d>0){el.textContent=d;}
   else{el.textContent='—';var s=document.getElementById('days-label');
-    if(s)s.textContent='the DESNZ response summary was expected around 22 July 2026 — see the news page for the latest';}
+    if(s)s.textContent='the plug-in solar rules are now in force — see the news page for what the law requires';}
 }
 
 /* ── mini savings calculator (homepage teaser) ──────────────── */
