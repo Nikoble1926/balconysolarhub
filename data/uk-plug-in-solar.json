@@ -1,0 +1,318 @@
+{
+  "schema_version": "1.0",
+  "last_updated": "2026-08-01",
+  "source": "https://balconysolarhub.co.uk/developers/",
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "BalconySolarHub (balconysolarhub.co.uk)"
+  },
+  "disclaimer": "Informational, not legal advice. Verify with the legislation, the Energy Networks Association and your own Distribution Network Operator before relying on any value here.",
+  "coverage": {
+    "geography": "Great Britain (England, Wales, Scotland)",
+    "northern_ireland": {
+      "in_scope": false,
+      "note": "Northern Ireland is deliberately out of scope for the DNO section. It does not appear in the Energy Networks Association distribution licence area table, and regulation 3 of SI 2026/848 does not extend to Northern Ireland. Regulations 1 and 2 of that instrument do."
+    }
+  },
+  "legislation": {
+    "si_number": "2026 No. 848",
+    "title": "The Plugs and Sockets etc. (Safety) Regulations 1994 and Electricity Safety, Quality and Continuity Regulations 2002 (Amendment) Regulations 2026",
+    "made_date": "2026-07-16",
+    "laid_before_parliament": "2026-07-17",
+    "in_force_date": "2026-08-27",
+    "signed_by": "Martin McCluskey, Parliamentary Under-Secretary of State, Department for Energy Security and Net Zero",
+    "enabling_powers": [
+      "Electricity Act 1989, section 29",
+      "Consumer Protection Act 1987, section 11"
+    ],
+    "extent": {
+      "regulations_1_and_2": [
+        "England and Wales",
+        "Scotland",
+        "Northern Ireland"
+      ],
+      "regulation_3": [
+        "England and Wales",
+        "Scotland"
+      ],
+      "note": "The extent is not uniform. Regulation 3, which amends the Electricity Safety, Quality and Continuity Regulations 2002, does not extend to Northern Ireland."
+    },
+    "what_it_permits": "Regulation 2 allows a notified body to approve a type of standard plug for use with a plug-in microgenerator even though it does not conform to BS 1363, where the only non-conformity is that BS 1363 prohibits or restricts using a plug to connect an electricity-generating device to a socket-outlet. Regulation 3 provides that a plug-in microgenerator must comply with the Plug-in Solar Device Interim Product Specification.",
+    "wattage_cap_w": 800,
+    "wattage_cap_basis": "maximum rated alternating current output",
+    "plug_in_microgenerator_definition": {
+      "quote_source": "SI 2026/848, regulation 2(3) and regulation 3(2)",
+      "conditions": [
+        "generates electricity from the direct conversion of sunlight into electricity",
+        "has a maximum rated alternating current output not exceeding 800 watts",
+        "is intended for connection to a low voltage consumer's installation by means of a standard plug and socket",
+        "is designed to operate in parallel with a distributor's network",
+        "is not designed to import electrical energy from a low voltage consumer's installation for the purpose of storing energy for later supply, other than for control or auxiliary functions permitted by the Plug-in Solar Device Interim Product Specification"
+      ]
+    },
+    "battery_storage_excluded": {
+      "value": true,
+      "note": "Condition (e) of the statutory definition excludes devices designed to import electricity in order to store it for later supply. A plug-in system with a battery that charges from the household supply is therefore not a plug-in microgenerator under this instrument."
+    },
+    "product_specification": {
+      "name": "Plug-in Solar Device Interim Product Specification",
+      "version": "2",
+      "published": "2026-07-16",
+      "publisher": "Secretary of State",
+      "url": "https://www.gov.uk/government/consultations/plug-in-solar"
+    },
+    "addresses_dno_notification": {
+      "value": false,
+      "note": "SI 2026/848 does not mention DNO notification or Engineering Recommendation G98. Notification is a separate framework administered through the Energy Networks Association. The two should not be conflated."
+    },
+    "source_url": "https://www.legislation.gov.uk/uksi/2026/848/made",
+    "last_verified": "2026-08-01"
+  },
+  "technical_limits": {
+    "note": "Two different caps apply and they are often confused. 800 W is the product cap set by SI 2026/848 for something to count as a plug-in microgenerator. 3.68 kW per phase is the connection-process cap for Engineering Recommendation G98. They serve different purposes.",
+    "legal_product_cap_w": {
+      "value": 800,
+      "applies_to": "whether a device is a plug-in microgenerator under SI 2026/848",
+      "source_url": "https://www.legislation.gov.uk/uksi/2026/848/made"
+    },
+    "g98_limit_amps_per_phase": {
+      "value": 16,
+      "applies_to": "eligibility for the G98 connection process",
+      "source_url": "https://www.enwl.co.uk/get-connected/apply-for-a-new-connection/generation-and-storage/micro-generation-and-storage-connections/"
+    },
+    "g98_single_phase_kw": {
+      "value": 3.68,
+      "source_url": "https://www.enwl.co.uk/get-connected/apply-for-a-new-connection/generation-and-storage/micro-generation-and-storage-connections/"
+    },
+    "g98_three_phase_kw": {
+      "value": 11.04,
+      "source_url": "https://www.enwl.co.uk/get-connected/apply-for-a-new-connection/generation-and-storage/micro-generation-and-storage-connections/"
+    },
+    "notification_legal_basis": {
+      "value": "Electricity Safety, Quality and Continuity Regulations 2002",
+      "quote": "This is an obligation under the Electricity, Safety, Quality and Continuity Regulations 2002",
+      "source_url": "https://www.enwl.co.uk/get-connected/apply-for-a-new-connection/generation-and-storage/micro-generation-and-storage-connections/"
+    },
+    "form_single_premises": "G98 Form B",
+    "form_multiple_premises": "G98 Form A",
+    "national_submission_route": {
+      "name": "ENA Connect Direct",
+      "url": "https://connect-direct.energynetworks.org",
+      "http_status_checked": 200,
+      "last_verified": "2026-08-01"
+    },
+    "bs7671_amendment": null,
+    "bs7671_amendment_note": "not verified - BS 7671 is a paid standard and we have no primary access",
+    "mpan_required": null,
+    "mpan_required_note": "not verified - no primary source states this explicitly"
+  },
+  "dno_notification": {
+    "headline_finding": "The notification deadline is not uniform across Great Britain. Two operators publish different deadlines (28 and 30 days) and four do not publish one on the page a householder would reach. Any statement that 'you have 28 days across the UK' is not supported by the operators' own pages.",
+    "dno_group_count": 6,
+    "licence_area_count": 14,
+    "licence_area_source": "https://www.energynetworks.org/operating-the-networks/whos-my-network-operator",
+    "dnos": [
+      {
+        "dno_name": "UK Power Networks",
+        "dno_short": "UKPN",
+        "licence_areas": [
+          {
+            "mpan_distributor_id": 10,
+            "region": "Eastern England"
+          },
+          {
+            "mpan_distributor_id": 12,
+            "region": "London"
+          },
+          {
+            "mpan_distributor_id": 19,
+            "region": "South Eastern England"
+          }
+        ],
+        "regions_covered": [
+          "Eastern England",
+          "London",
+          "South Eastern England"
+        ],
+        "g98_notify_url": "https://www.ukpowernetworks.co.uk/smart-connect",
+        "g98_notify_url_http_status": 200,
+        "g98_notify_url_checked": "2026-08-01",
+        "notification_type": "post-install notification, not approval (single premises)",
+        "notification_deadline_days": 28,
+        "notification_deadline_quote": "all you need to do is notify us within 28 days of the installation",
+        "fee": null,
+        "fee_note": "not verified - no operator page consulted states a fee for a single-premises G98 notification, and we do not infer that it is free",
+        "single_phase_limit_kw": 3.68,
+        "single_phase_limit_amps": 16,
+        "form_single_premises": "G98 Form B",
+        "source_url": "https://www.ukpowernetworks.co.uk/smart-connect",
+        "last_verified": "2026-08-01"
+      },
+      {
+        "dno_name": "National Grid Electricity Distribution",
+        "dno_short": "NGED",
+        "licence_areas": [
+          {
+            "mpan_distributor_id": 11,
+            "region": "East Midlands"
+          },
+          {
+            "mpan_distributor_id": 14,
+            "region": "West Midlands"
+          },
+          {
+            "mpan_distributor_id": 21,
+            "region": "Southern Wales"
+          },
+          {
+            "mpan_distributor_id": 22,
+            "region": "South Western England"
+          }
+        ],
+        "regions_covered": [
+          "East Midlands",
+          "West Midlands",
+          "Southern Wales",
+          "South Western England"
+        ],
+        "g98_notify_url": "https://connections.nationalgrid.co.uk/g98-connection-procedures",
+        "g98_notify_url_http_status": 200,
+        "g98_notify_url_checked": "2026-08-01",
+        "notification_type": "post-install notification, not approval (single premises)",
+        "notification_deadline_days": null,
+        "notification_deadline_quote": null,
+        "fee": null,
+        "fee_note": "not verified - no operator page consulted states a fee for a single-premises G98 notification, and we do not infer that it is free",
+        "single_phase_limit_kw": 3.68,
+        "single_phase_limit_amps": 16,
+        "form_single_premises": "G98 Form B",
+        "source_url": "https://connections.nationalgrid.co.uk/g98-connection-procedures",
+        "last_verified": "2026-08-01",
+        "notification_deadline_note": "not stated on the operator's own G98 page as read on 2026-08-01"
+      },
+      {
+        "dno_name": "SP Energy Networks",
+        "dno_short": "SPEN",
+        "licence_areas": [
+          {
+            "mpan_distributor_id": 13,
+            "region": "Cheshire, Merseyside and Northern Wales"
+          },
+          {
+            "mpan_distributor_id": 18,
+            "region": "Southern Scotland"
+          }
+        ],
+        "regions_covered": [
+          "Cheshire, Merseyside and Northern Wales",
+          "Southern Scotland"
+        ],
+        "g98_notify_url": "https://www.spenergynetworks.co.uk/pages/single_g98_generator_connections.aspx",
+        "g98_notify_url_http_status": 200,
+        "g98_notify_url_checked": "2026-08-01",
+        "notification_type": "post-install notification, not approval (single premises)",
+        "notification_deadline_days": 30,
+        "notification_deadline_quote": "within 30 days",
+        "fee": null,
+        "fee_note": "not verified - no operator page consulted states a fee for a single-premises G98 notification, and we do not infer that it is free",
+        "single_phase_limit_kw": 3.68,
+        "single_phase_limit_amps": 16,
+        "form_single_premises": "G98 Form B",
+        "source_url": "https://www.spenergynetworks.co.uk/pages/single_g98_generator_connections.aspx",
+        "last_verified": "2026-08-01"
+      },
+      {
+        "dno_name": "Northern Powergrid",
+        "dno_short": "NPg",
+        "licence_areas": [
+          {
+            "mpan_distributor_id": 15,
+            "region": "North Eastern England"
+          },
+          {
+            "mpan_distributor_id": 23,
+            "region": "Yorkshire"
+          }
+        ],
+        "regions_covered": [
+          "North Eastern England",
+          "Yorkshire"
+        ],
+        "g98_notify_url": "https://www.northernpowergrid.com/connections-and-services/electric-vehicles-solar-and-heat-pumps/solar-panels-generation-battery-storage/small-scale-generation",
+        "g98_notify_url_http_status": 200,
+        "g98_notify_url_checked": "2026-08-01",
+        "notification_type": "post-install notification, not approval (single premises)",
+        "notification_deadline_days": null,
+        "notification_deadline_quote": null,
+        "fee": null,
+        "fee_note": "not verified - no operator page consulted states a fee for a single-premises G98 notification, and we do not infer that it is free",
+        "single_phase_limit_kw": 3.68,
+        "single_phase_limit_amps": 16,
+        "form_single_premises": "G98 Form B",
+        "source_url": "https://www.northernpowergrid.com/connections-and-services/electric-vehicles-solar-and-heat-pumps/solar-panels-generation-battery-storage/small-scale-generation",
+        "last_verified": "2026-08-01",
+        "notification_deadline_note": "not stated on the operator's own G98 page as read on 2026-08-01"
+      },
+      {
+        "dno_name": "Electricity North West",
+        "dno_short": "ENWL",
+        "licence_areas": [
+          {
+            "mpan_distributor_id": 16,
+            "region": "North Western England"
+          }
+        ],
+        "regions_covered": [
+          "North Western England"
+        ],
+        "g98_notify_url": "https://www.enwl.co.uk/get-connected/apply-for-a-new-connection/generation-and-storage/micro-generation-and-storage-connections/",
+        "g98_notify_url_http_status": 200,
+        "g98_notify_url_checked": "2026-08-01",
+        "notification_type": "post-install notification, not approval (single premises)",
+        "notification_deadline_days": null,
+        "notification_deadline_quote": null,
+        "fee": null,
+        "fee_note": "not verified - no operator page consulted states a fee for a single-premises G98 notification, and we do not infer that it is free",
+        "single_phase_limit_kw": 3.68,
+        "single_phase_limit_amps": 16,
+        "form_single_premises": "G98 Form B",
+        "source_url": "https://www.enwl.co.uk/get-connected/apply-for-a-new-connection/generation-and-storage/micro-generation-and-storage-connections/",
+        "last_verified": "2026-08-01",
+        "notification_deadline_note": "not stated on the operator's own G98 page as read on 2026-08-01"
+      },
+      {
+        "dno_name": "Scottish and Southern Electricity Networks",
+        "dno_short": "SSEN",
+        "licence_areas": [
+          {
+            "mpan_distributor_id": 17,
+            "region": "Northern Scotland"
+          },
+          {
+            "mpan_distributor_id": 20,
+            "region": "Southern England"
+          }
+        ],
+        "regions_covered": [
+          "Northern Scotland",
+          "Southern England"
+        ],
+        "g98_notify_url": "https://www.ssen.co.uk/our-services/new-supplies/generation-connections/micro-generation-connections/g98g99-generator-requirement-documents/",
+        "g98_notify_url_http_status": 200,
+        "g98_notify_url_checked": "2026-08-01",
+        "notification_type": "post-install notification, not approval (single premises)",
+        "notification_deadline_days": null,
+        "notification_deadline_quote": null,
+        "fee": null,
+        "fee_note": "not verified - no operator page consulted states a fee for a single-premises G98 notification, and we do not infer that it is free",
+        "single_phase_limit_kw": 3.68,
+        "single_phase_limit_amps": 16,
+        "form_single_premises": "G98 Form B",
+        "source_url": "https://www.ssen.co.uk/our-services/new-supplies/generation-connections/micro-generation-connections/g98g99-generator-requirement-documents/",
+        "last_verified": "2026-08-01",
+        "notification_deadline_note": "not stated on the operator's own G98 page as read on 2026-08-01"
+      }
+    ]
+  }
+}

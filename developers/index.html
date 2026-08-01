@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en-GB"><head><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/favicon-96.png" sizes="96x96" type="image/png"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>UK Plug-In Solar Dataset &mdash; Free, Cited, CC BY 4.0 | Developers</title>
+<meta name="description" content="Open dataset of UK plug-in solar rules: SI 2026/848 verbatim, and G98 notification requirements for all 6 DNOs across 14 licence areas. Every value cited to a primary source. Free under CC BY 4.0.">
+<link rel="canonical" href="https://balconysolarhub.co.uk/developers/">
+<meta property="og:type" content="website"><meta property="og:title" content="UK Plug-In Solar Dataset &mdash; Free, Cited, CC BY 4.0">
+<meta property="og:description" content="SI 2026/848 verbatim plus G98 notification requirements for all 6 UK DNOs. Every value cited to a primary source."><meta property="og:url" content="https://balconysolarhub.co.uk/developers/"><meta property="og:image" content="https://balconysolarhub.co.uk/og-image.png">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="UK Plug-In Solar Dataset (CC BY 4.0)"><meta name="twitter:description" content="SI 2026/848 plus G98 requirements for all 6 UK DNOs, each value cited."><meta name="twitter:image" content="https://balconysolarhub.co.uk/og-image.png">
+<meta name="robots" content="index,follow"><script>try{var t=localStorage.getItem("theme")||"light";document.documentElement.setAttribute("data-theme",t)}catch(e){}</script><link rel="stylesheet" href="/style.css"><script src="/theme.js" defer></script><script src="/film.js" defer></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"UK Plug-In Solar Dataset","alternateName":"UK plug-in / balcony solar law and DNO notification dataset","description":"Structured, source-cited data on UK plug-in (balcony) solar: the full detail of Statutory Instrument 2026/848 including its non-uniform territorial extent and 800 W product cap, and the G98 notification requirements published by each of the six Distribution Network Operators covering Great Britain's fourteen distribution licence areas. Values that no primary source states are recorded as null rather than estimated.","url":"https://balconysolarhub.co.uk/developers/","sameAs":"https://balconysolarhub.co.uk/data/uk-plug-in-solar.json","keywords":["plug-in solar","balcony solar","United Kingdom","SI 2026/848","G98","DNO","Distribution Network Operator","microgeneration","ESQCR 2002"],"license":"https://creativecommons.org/licenses/by/4.0/","isAccessibleForFree":true,"creator":{"@type":"Organization","name":"BalconySolarHub","url":"https://balconysolarhub.co.uk/"},"spatialCoverage":{"@type":"Place","name":"Great Britain"},"temporalCoverage":"2026-08-01","dateModified":"2026-08-01","version":"1.0","distribution":[{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":"https://balconysolarhub.co.uk/data/uk-plug-in-solar.json"}],"citation":"BalconySolarHub, UK Plug-In Solar Dataset, version 1.0 (2026), CC BY 4.0, https://balconysolarhub.co.uk/developers/"}</script></head><body>
+<header class="site"><div class="wrap bar">
+<a class="logo" href="/"><span class="sun"></span>BalconySolarHub</a>
+<nav class="main"><a href="/">Home</a><a href="/legal/">UK Legal</a><a href="/g98-notification/">G98 Walkthrough</a><a href="/best-kits-2026/">Best Kits</a><a href="/savings-calculator/">Calculator</a><a href="/guides/800w-limit/">800W Limit</a><a href="/faq/">FAQ</a><a href="/about/">About</a></nav></div></header>
+<main><div class="wrap"><div class="crumbs"><a href="/">Home</a> &rsaquo; Developers</div></div>
+<section><div class="wrap"><article class="article" style="max-width:820px">
+<h1>UK plug-in solar dataset</h1>
+<p><span class="badge g">Free &middot; CC BY 4.0</span> &nbsp; <span class="tag">JSON &middot; version 1.0</span></p>
+<p class="tag" style="margin:0 0 12px"><strong>Last verified:</strong> 1 August 2026</p>
+
+<div class="answer" style="margin:14px 0 18px;padding:14px 16px;background:#f0f9ff;border-left:4px solid #0ea5e9;border-radius:6px;font-size:17px;line-height:1.55">
+A machine-readable file covering two things: <strong>what SI 2026/848 actually says</strong>, and <strong>what each of the six UK network operators asks you to do</strong> after you install. Every value is cited to a primary source. Anything a primary source does not state is <code>null</code>, not an estimate.
+</div>
+
+<h2 style="margin-top:26px">Get it</h2>
+<div class="note" style="margin:12px 0">
+<p style="margin:0 0 8px"><strong>Endpoint</strong></p>
+<p style="margin:0 0 10px"><code>https://balconysolarhub.co.uk/data/uk-plug-in-solar.json</code></p>
+<p style="margin:0;font-size:14.5px;color:var(--mut)">One file, no key, no rate limit, CORS-open. UTF-8 without a byte-order mark, so <code>json.load</code> and <code>JSON.parse</code> both work without special handling.</p>
+</div>
+
+<h2 style="margin-top:30px">Why this exists</h2>
+<div class="article">
+<p>Plug-in solar becomes lawful in Great Britain on <strong>27 August 2026</strong>. In the days around that date a great deal will be written about it, and most of it will repeat two claims that our own reading of the primary sources does not support.</p>
+<p><strong>The first is that the law applies uniformly across the UK.</strong> It does not. Regulations 1 and 2 of SI 2026/848 extend to England and Wales, Scotland and Northern Ireland. Regulation 3 &mdash; the one that amends the Electricity Safety, Quality and Continuity Regulations 2002 &mdash; extends only to England and Wales and Scotland.</p>
+<p><strong>The second is that you have 28 days to notify your network operator, everywhere.</strong> Reading all six operators' own pages on 1 August 2026, two publish a deadline and they differ: UK Power Networks says 28 days, SP Energy Networks says 30. The other four do not publish a deadline on the page a householder would reach.</p>
+<p>That second finding is the reason this dataset exists. Nobody had the notification requirements structured per operator, so nobody could see that they disagree.</p>
+</div>
+
+<h2 style="margin-top:30px">What is in it</h2>
+
+<h3 style="margin-top:20px">1. The legislation</h3>
+<table><caption class="sr-only">Legislation fields</caption><thead><tr><th scope="col">Field</th><th scope="col">Value</th></tr></thead><tbody>
+<tr><td><code>si_number</code></td><td>2026 No. 848</td></tr>
+<tr><td><code>made_date</code></td><td>16 July 2026</td></tr>
+<tr><td><code>laid_before_parliament</code></td><td>17 July 2026</td></tr>
+<tr><td><code>in_force_date</code></td><td><strong>27 August 2026</strong></td></tr>
+<tr><td><code>wattage_cap_w</code></td><td><strong>800</strong> &mdash; &ldquo;maximum rated alternating current output not exceeding 800 watts&rdquo;</td></tr>
+<tr><td><code>extent</code></td><td>Split: regs 1&ndash;2 include Northern Ireland, reg 3 does not</td></tr>
+<tr><td><code>battery_storage_excluded</code></td><td><code>true</code> &mdash; see below</td></tr>
+<tr><td><code>addresses_dno_notification</code></td><td><code>false</code> &mdash; the instrument never mentions G98</td></tr>
+</tbody></table>
+
+<div class="note" style="margin:14px 0">
+<p style="margin:0"><strong>The battery point is easy to miss.</strong> The statutory definition of a plug-in microgenerator requires that the device is <em>&ldquo;not designed to import electrical energy from a low voltage consumer&rsquo;s installation for the purpose of storing energy for later supply&rdquo;</em>. A plug-in system with a battery that charges from the household supply therefore falls outside the definition. The dataset carries all five conditions verbatim so you can check that yourself.</p>
+</div>
+
+<h3 style="margin-top:24px">2. The network operators</h3>
+<p>Six operator groups covering <strong>fourteen distribution licence areas</strong>, keyed by MPAN distributor ID so you can join it to a meter.</p>
+<table><caption class="sr-only">DNO notification deadlines as published</caption><thead><tr><th scope="col">Operator</th><th scope="col">Licence areas</th><th scope="col">Deadline on their page</th></tr></thead><tbody>
+<tr><td>UK Power Networks</td><td>10, 12, 19</td><td><strong>28 days</strong></td></tr>
+<tr><td>SP Energy Networks</td><td>13, 18</td><td><strong>30 days</strong></td></tr>
+<tr><td>National Grid Electricity Distribution</td><td>11, 14, 21, 22</td><td><code>null</code> &mdash; not stated</td></tr>
+<tr><td>Northern Powergrid</td><td>15, 23</td><td><code>null</code> &mdash; not stated</td></tr>
+<tr><td>Electricity North West</td><td>16</td><td><code>null</code> &mdash; not stated</td></tr>
+<tr><td>Scottish and Southern Electricity Networks</td><td>17, 20</td><td><code>null</code> &mdash; not stated</td></tr>
+</tbody></table>
+<p class="tag" style="margin:8px 0 0">Each record also carries <code>g98_notify_url</code>, the HTTP status we saw when we checked it, the date of that check, the verbatim deadline quote where one exists, and <code>fee</code> &mdash; which is <code>null</code> for every operator, because none of them states one and we are not going to infer that it is free.</p>
+
+<h3 style="margin-top:24px">3. Technical limits &mdash; two caps, not one</h3>
+<div class="note" style="margin:12px 0">
+<p style="margin:0 0 8px"><strong>800 W</strong> is the <em>product</em> cap. It decides whether a device counts as a plug-in microgenerator under SI 2026/848.</p>
+<p style="margin:0"><strong>3.68 kW (16 A per phase)</strong> is the <em>process</em> cap. It decides whether your connection can use the G98 route rather than G99.</p>
+</div>
+<p>They are frequently reported as though they were the same number, or as though one supersedes the other. The dataset keeps them in separate fields with separate sources so that cannot happen.</p>
+
+<h2 style="margin-top:30px">Coverage and what is deliberately missing</h2>
+<div class="article">
+<ul>
+<li><strong>Northern Ireland is out of scope</strong> for the operator section, and says so explicitly in <code>coverage.northern_ireland</code>. It does not appear in the Energy Networks Association licence area table, and regulation 3 does not extend there. We would rather declare the gap than fill it with a guess.</li>
+<li><strong>Four notification deadlines are <code>null</code></strong> because those operators do not publish one.</li>
+<li><strong>Every fee is <code>null</code>.</strong> No page consulted states a charge for a single-premises G98 notification. Absence of a stated fee is not evidence of no fee.</li>
+<li><strong><code>bs7671_amendment</code> is <code>null</code>.</strong> BS 7671 is a paid standard and we have no primary access to it. We are not citing a number we have not read.</li>
+</ul>
+</div>
+
+<h2 style="margin-top:30px">Example</h2>
+<div class="note" style="margin:12px 0"><pre style="margin:0;white-space:pre-wrap;font-size:13.5px;line-height:1.5"><code>curl -s https://balconysolarhub.co.uk/data/uk-plug-in-solar.json \
+  | python -c "import sys,json; d=json.load(sys.stdin); \
+print(d['legislation']['in_force_date'], d['legislation']['wattage_cap_w']); \
+[print(x['dno_short'], x['notification_deadline_days']) \
+ for x in d['dno_notification']['dnos']]"</code></pre></div>
+
+<h2 style="margin-top:30px">Licence and citation</h2>
+<p>Published under <a href="https://creativecommons.org/licenses/by/4.0/" rel="noopener">Creative Commons Attribution 4.0</a>. Use it commercially, change it, build on it &mdash; just credit it.</p>
+<div class="note" style="margin:12px 0"><p style="margin:0;font-size:14.5px"><strong>Cite as:</strong> BalconySolarHub, <em>UK Plug-In Solar Dataset</em>, version 1.0 (2026), CC BY 4.0, <code>https://balconysolarhub.co.uk/developers/</code></p></div>
+
+<h2 style="margin-top:30px">Sources</h2>
+<div class="article">
+<ul>
+<li><a href="https://www.legislation.gov.uk/uksi/2026/848/made" rel="noopener">SI 2026/848, full text</a> &mdash; legislation.gov.uk</li>
+<li><a href="https://www.energynetworks.org/operating-the-networks/whos-my-network-operator" rel="noopener">Distribution licence areas</a> &mdash; Energy Networks Association</li>
+<li><a href="https://connect-direct.energynetworks.org" rel="noopener">ENA Connect Direct</a> &mdash; national submission route</li>
+<li>The six operators&rsquo; own G98 pages, listed with their URLs inside the dataset</li>
+</ul>
+<p class="tag">Secondary sources &mdash; blogs, aggregators, news write-ups &mdash; were deliberately excluded. If a value could not be traced to a primary source it is <code>null</code>.</p>
+</div>
+
+<div class="note" style="margin-top:26px"><strong>Related reading:</strong> <a href="/legal/">Is plug-in solar legal in the UK?</a> &middot; <a href="/g98-notification/">G98 notification walkthrough</a> &middot; <a href="/guides/800w-limit/">The 800W limit explained</a> &middot; <a href="/news/desnz-plug-in-solar-response-2026/">DESNZ response</a></div>
+
+<p class="tag" style="margin-top:22px">Found something wrong? <a href="/contact/">Tell us</a> &mdash; corrections are published in the <a href="/changelog/">changelog</a>, not made silently.</p>
+
+</article></div></section>
+</main>
+<footer class="site"><div class="wrap"><div class="cols">
+<div><h4>BalconySolarHub</h4><p class="tag" style="color:var(--mut)">Independent, honest UK guidance for balcony / plug-in solar.</p></div>
+<div><h4>Start here</h4><ul>
+<li><a href="/legal/">Is plug-in solar legal in the UK?</a></li>
+<li><a href="/g98-notification/">G98 DNO notification walkthrough</a></li>
+<li><a href="/guides/800w-limit/">The 800W limit explained</a></li>
+<li><a href="/best-kits-2026/">Best UK balcony solar kits 2026</a></li>
+<li><a href="/savings-calculator/">Savings calculator (&pound;)</a></li>
+</ul></div>
+<div><h4>Learn</h4><ul>
+<li><a href="/guides/normal-socket/">Plug into a normal socket?</a></li>
+<li><a href="/guides/battery-storage/">Battery storage UK</a></li>
+<li><a href="/guides/cost-payback/">Cost &amp; payback (UK)</a></li>
+<li><a href="/developers/">Developers &amp; open data</a></li>
+<li><a href="/faq/">FAQ</a></li>
+<li><a href="/changelog/">Changelog</a></li>
+</ul></div></div>
+<div class="fdisc">
+<p><strong>Affiliate disclosure:</strong> BalconySolarHub is reader-supported. When you buy through links on our site, we may earn a commission at no extra cost to you.</p>
+<p style="margin-bottom:8px"><a href="/privacy/">Privacy</a> &middot; <a href="/affiliate-disclosure/">Affiliate disclosure</a> &middot; <a href="/contact/">Contact</a> &middot; <a href="/about/">About</a> &middot; <a href="/developers/">Developers</a></p>
+<p>UK plug-in solar rules are changing &mdash; always confirm current details with your DNO and the legislation itself. &copy; 2026 BalconySolarHub.</p>
+</div></div></footer>
+</body></html>
