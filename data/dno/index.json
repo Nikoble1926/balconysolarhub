@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "last_updated": "2026-08-01",
   "source": "https://balconysolarhub.co.uk/developers/",
   "license": {
@@ -17,7 +17,27 @@
   },
   "count": 6,
   "licence_area_count": 14,
-  "headline_finding": "The notification deadline is not uniform across Great Britain. Two operators publish different deadlines (28 and 30 days) and four do not publish one on the page a householder would reach. Any statement that 'you have 28 days across the UK' is not supported by the operators' own pages.",
+  "headline_finding": "The 28-day notification deadline is not set by individual network operators. It is a national requirement in EREC G98 section 1.1, made under ESQCR 2002 Regulation 22(2)(c) and the HSE Certificate of Exemption of August 2008, and EREC G98 places the duty on the installer. SI 2026/848, which legalises plug-in solar from 27 August 2026, does not mention EREC G98, DNO notification, or any connection procedure at all. That leaves a gap: a householder who installs a plug-in device themselves has no installer to discharge the duty, and the notification portal of the largest operator by licence area, UK Power Networks, is open only to approved installers. Five of the six operators are consistent with the national 28 days; SP Energy Networks publishes 30 days for the commissioning confirmation form and separately requires notice before or at commissioning.",
+  "deadline_uniformity": "uniform at 28 days nationally, with SP Energy Networks publishing 30 days for its commissioning confirmation form",
+  "national_rule": {
+    "deadline_days": 28,
+    "inclusive_of_commissioning_day": true,
+    "quote": "the Installer is required to ensure that the DNO is made aware of the Micro-generator installation before the time of commissioning or no later than 28 days (inclusive of the day of commissioning) after commissioning",
+    "source_document": "ENA Engineering Recommendation G98, section 1.1 (restated at 8.3.1)",
+    "source_url": "https://www.energynetworks.org/assets/images/Publications/2024/240522%20erec-g98-557469.pdf",
+    "legal_basis": "Electricity Safety, Quality and Continuity Regulations 2002 Regulation 22(2)(c), and the Certificate of Exemption granted by the Health and Safety Executive in August 2008",
+    "is_legal_requirement": true,
+    "duty_holder": "the installer",
+    "duty_holder_quote": "Your installer must notify the DNO within 28 days of commissioning the generating unit, and provide them with information on the installation. This is a legal requirement.",
+    "duty_holder_source": "ENA Distributed Generation Connection Guide: G98 for Single Premises",
+    "duty_holder_source_url": "https://www.energynetworks.org/assets/images/Resource%20library/G98%20Single%20Premises.pdf",
+    "form": "G98 Form B, the Installation Document at Appendix 3 of EREC G98",
+    "applies_to_diy_householder": null,
+    "applies_to_diy_householder_note": "EREC G98 places the duty on the installer. No primary source consulted states what a householder who installs a plug-in device without an installer must do. This is recorded as unresolved rather than guessed.",
+    "not_referenced_by_si_2026_848": true,
+    "not_referenced_by_si_2026_848_note": "The full text of SI 2026/848 was read on 2026-08-01. It amends product safety requirements and does not mention EREC G98, DNO notification, or any connection procedure. The notification framework is separate from the legalisation.",
+    "last_verified": "2026-08-01"
+  },
   "mpan_lookup": {
     "10": "uk-power-networks",
     "12": "uk-power-networks",
@@ -50,7 +70,9 @@
         "London",
         "South Eastern England"
       ],
-      "notification_deadline_days": 28
+      "notification_deadline_days": 28,
+      "notification_deadline_source": "stated on the operator's own page",
+      "route_open_to_householder": false
     },
     {
       "dno_name": "National Grid Electricity Distribution",
@@ -69,7 +91,9 @@
         "Southern Wales",
         "South Western England"
       ],
-      "notification_deadline_days": null
+      "notification_deadline_days": 28,
+      "notification_deadline_source": "stated on the operator's own page",
+      "route_open_to_householder": null
     },
     {
       "dno_name": "SP Energy Networks",
@@ -84,7 +108,9 @@
         "Cheshire, Merseyside and Northern Wales",
         "Southern Scotland"
       ],
-      "notification_deadline_days": 30
+      "notification_deadline_days": 30,
+      "notification_deadline_source": "stated on the operator's own page",
+      "route_open_to_householder": null
     },
     {
       "dno_name": "Northern Powergrid",
@@ -99,7 +125,9 @@
         "North Eastern England",
         "Yorkshire"
       ],
-      "notification_deadline_days": null
+      "notification_deadline_days": 28,
+      "notification_deadline_source": "national EREC G98 rule; not restated on the operator's own page",
+      "route_open_to_householder": null
     },
     {
       "dno_name": "Electricity North West",
@@ -112,7 +140,9 @@
       "regions_covered": [
         "North Western England"
       ],
-      "notification_deadline_days": null
+      "notification_deadline_days": 28,
+      "notification_deadline_source": "stated on the operator's own page",
+      "route_open_to_householder": null
     },
     {
       "dno_name": "Scottish and Southern Electricity Networks",
@@ -127,7 +157,9 @@
         "Northern Scotland",
         "Southern England"
       ],
-      "notification_deadline_days": null
+      "notification_deadline_days": 28,
+      "notification_deadline_source": "stated on the operator's own page",
+      "route_open_to_householder": true
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "last_updated": "2026-08-01",
   "source": "https://balconysolarhub.co.uk/developers/",
   "license": {
@@ -108,7 +108,7 @@
     "mpan_required_note": "not verified - no primary source states this explicitly"
   },
   "dno_notification": {
-    "headline_finding": "The notification deadline is not uniform across Great Britain. Two operators publish different deadlines (28 and 30 days) and four do not publish one on the page a householder would reach. Any statement that 'you have 28 days across the UK' is not supported by the operators' own pages.",
+    "headline_finding": "The 28-day notification deadline is not set by individual network operators. It is a national requirement in EREC G98 section 1.1, made under ESQCR 2002 Regulation 22(2)(c) and the HSE Certificate of Exemption of August 2008, and EREC G98 places the duty on the installer. SI 2026/848, which legalises plug-in solar from 27 August 2026, does not mention EREC G98, DNO notification, or any connection procedure at all. That leaves a gap: a householder who installs a plug-in device themselves has no installer to discharge the duty, and the notification portal of the largest operator by licence area, UK Power Networks, is open only to approved installers. Five of the six operators are consistent with the national 28 days; SP Energy Networks publishes 30 days for the commissioning confirmation form and separately requires notice before or at commissioning.",
     "dno_group_count": 6,
     "licence_area_count": 14,
     "licence_area_source": "https://www.energynetworks.org/operating-the-networks/whos-my-network-operator",
@@ -147,7 +147,13 @@
         "single_phase_limit_amps": 16,
         "form_single_premises": "G98 Form B",
         "source_url": "https://www.ukpowernetworks.co.uk/smart-connect",
-        "last_verified": "2026-08-01"
+        "last_verified": "2026-08-01",
+        "notification_deadline_source": "stated on the operator's own page",
+        "notification_deadline_url": "https://www.ukpowernetworks.co.uk/smart-connect",
+        "notification_deadline_context": "Stated on the Smart Connect installer portal, which covers low carbon technology installations at a house or small business up to 69 kVA. It is not a G98-specific page and it is not open to the public.",
+        "notification_route_open_to_householder": false,
+        "notification_route_note": "Only approved installers can use Smart Connect on behalf of customers. Quoted verbatim from the operator's page on 2026-08-01.",
+        "inform_before_commissioning_required": null
       },
       {
         "dno_name": "National Grid Electricity Distribution",
@@ -176,20 +182,25 @@
           "Southern Wales",
           "South Western England"
         ],
-        "g98_notify_url": "https://connections.nationalgrid.co.uk/g98-connection-procedures",
+        "g98_notify_url": "https://connections.nationalgrid.co.uk/get-connected/solar-and-wind/micro-generation-single-g98",
         "g98_notify_url_http_status": 200,
         "g98_notify_url_checked": "2026-08-01",
         "notification_type": "post-install notification, not approval (single premises)",
-        "notification_deadline_days": null,
-        "notification_deadline_quote": null,
+        "notification_deadline_days": 28,
+        "notification_deadline_quote": "You must notify us of the generation installation within 28 days of commissioning",
         "fee": null,
         "fee_note": "not verified - no operator page consulted states a fee for a single-premises G98 notification, and we do not infer that it is free",
         "single_phase_limit_kw": 3.68,
         "single_phase_limit_amps": 16,
         "form_single_premises": "G98 Form B",
-        "source_url": "https://connections.nationalgrid.co.uk/g98-connection-procedures",
+        "source_url": "https://connections.nationalgrid.co.uk/get-connected/solar-and-wind/micro-generation-single-g98",
         "last_verified": "2026-08-01",
-        "notification_deadline_note": "not stated on the operator's own G98 page as read on 2026-08-01"
+        "notification_deadline_source": "stated on the operator's own page",
+        "notification_deadline_url": "https://connections.nationalgrid.co.uk/get-connected/solar-and-wind/micro-generation-single-g98",
+        "notification_deadline_context": "Stated twice on the operator's own G98 single-premises notification page, which offers an online notification form.",
+        "notification_route_open_to_householder": null,
+        "notification_route_note": "The online form asks for installer and customer contact information. Whether it can be completed without an installer is not stated.",
+        "inform_before_commissioning_required": false
       },
       {
         "dno_name": "SP Energy Networks",
@@ -213,14 +224,23 @@
         "g98_notify_url_checked": "2026-08-01",
         "notification_type": "post-install notification, not approval (single premises)",
         "notification_deadline_days": 30,
-        "notification_deadline_quote": "within 30 days",
+        "notification_deadline_quote": "The installation commissioning confirmation must be completed and submitted to us within 30 days of commissioning",
         "fee": null,
         "fee_note": "not verified - no operator page consulted states a fee for a single-premises G98 notification, and we do not infer that it is free",
         "single_phase_limit_kw": 3.68,
         "single_phase_limit_amps": 16,
         "form_single_premises": "G98 Form B",
         "source_url": "https://www.spenergynetworks.co.uk/pages/single_g98_generator_connections.aspx",
-        "last_verified": "2026-08-01"
+        "last_verified": "2026-08-01",
+        "notification_deadline_source": "stated on the operator's own page",
+        "notification_deadline_url": "https://www.spenergynetworks.co.uk/pages/single_g98_generator_connections.aspx",
+        "notification_deadline_context": "This 30-day figure is for the commissioning confirmation form and is not the same obligation as the national 28-day notification. SP Energy Networks separately requires the proposal to be notified before or at the time of commissioning.",
+        "notification_route_open_to_householder": null,
+        "notification_route_note": null,
+        "inform_before_commissioning_required": true,
+        "inform_before_commissioning_quote": "you must inform us of the proposal before or at the time of commissioning",
+        "differs_from_national_rule": true,
+        "differs_from_national_rule_note": "The operator publishes 30 days where EREC G98 s.1.1 sets 28. Both figures are recorded as published. We do not resolve the discrepancy."
       },
       {
         "dno_name": "Northern Powergrid",
@@ -243,7 +263,7 @@
         "g98_notify_url_http_status": 200,
         "g98_notify_url_checked": "2026-08-01",
         "notification_type": "post-install notification, not approval (single premises)",
-        "notification_deadline_days": null,
+        "notification_deadline_days": 28,
         "notification_deadline_quote": null,
         "fee": null,
         "fee_note": "not verified - no operator page consulted states a fee for a single-premises G98 notification, and we do not infer that it is free",
@@ -252,7 +272,12 @@
         "form_single_premises": "G98 Form B",
         "source_url": "https://www.northernpowergrid.com/connections-and-services/electric-vehicles-solar-and-heat-pumps/solar-panels-generation-battery-storage/small-scale-generation",
         "last_verified": "2026-08-01",
-        "notification_deadline_note": "not stated on the operator's own G98 page as read on 2026-08-01"
+        "notification_deadline_source": "national EREC G98 rule; not restated on the operator's own page",
+        "notification_deadline_url": null,
+        "notification_deadline_context": "The operator's own small-scale generation page does not restate the deadline. The national EREC G98 rule applies regardless. The operator publishes G98 Form B as 'Notification of microgeneration installations at a single premises'.",
+        "notification_route_open_to_householder": null,
+        "notification_route_note": null,
+        "inform_before_commissioning_required": null
       },
       {
         "dno_name": "Electricity North West",
@@ -270,8 +295,8 @@
         "g98_notify_url_http_status": 200,
         "g98_notify_url_checked": "2026-08-01",
         "notification_type": "post-install notification, not approval (single premises)",
-        "notification_deadline_days": null,
-        "notification_deadline_quote": null,
+        "notification_deadline_days": 28,
+        "notification_deadline_quote": "Engineering Recommendation G98 Form B is submitted to the DNO when a compliant micro-generator is installed within 28 days of commissioning",
         "fee": null,
         "fee_note": "not verified - no operator page consulted states a fee for a single-premises G98 notification, and we do not infer that it is free",
         "single_phase_limit_kw": 3.68,
@@ -279,7 +304,12 @@
         "form_single_premises": "G98 Form B",
         "source_url": "https://www.enwl.co.uk/get-connected/apply-for-a-new-connection/generation-and-storage/micro-generation-and-storage-connections/",
         "last_verified": "2026-08-01",
-        "notification_deadline_note": "not stated on the operator's own G98 page as read on 2026-08-01"
+        "notification_deadline_source": "stated on the operator's own page",
+        "notification_deadline_url": "https://www.enwl.co.uk/globalassets/get-connected/apply-for-a-new-connection/generation/micro-generation/guide-98_form-b-completion.pdf",
+        "notification_deadline_context": "Stated in the operator's own Form B completion guide rather than on the HTML connections page. The same guide states the form is completed by the installer.",
+        "notification_route_open_to_householder": null,
+        "notification_route_note": "Form B is returned by email to G98notifications@enwl.co.uk.",
+        "inform_before_commissioning_required": null
       },
       {
         "dno_name": "Scottish and Southern Electricity Networks",
@@ -302,8 +332,8 @@
         "g98_notify_url_http_status": 200,
         "g98_notify_url_checked": "2026-08-01",
         "notification_type": "post-install notification, not approval (single premises)",
-        "notification_deadline_days": null,
-        "notification_deadline_quote": null,
+        "notification_deadline_days": 28,
+        "notification_deadline_quote": "Customer/Installer must notify SSEN of the connection within 28 days from the date of commissioning",
         "fee": null,
         "fee_note": "not verified - no operator page consulted states a fee for a single-premises G98 notification, and we do not infer that it is free",
         "single_phase_limit_kw": 3.68,
@@ -311,8 +341,33 @@
         "form_single_premises": "G98 Form B",
         "source_url": "https://www.ssen.co.uk/our-services/new-supplies/generation-connections/micro-generation-connections/g98g99-generator-requirement-documents/",
         "last_verified": "2026-08-01",
-        "notification_deadline_note": "not stated on the operator's own G98 page as read on 2026-08-01"
+        "notification_deadline_source": "stated on the operator's own page",
+        "notification_deadline_url": "https://www.ssen.co.uk/globalassets/what-is-a-mpan/mpan-process-for-microgen-customers.pdf",
+        "notification_deadline_context": "Stated in the operator's own MPAN process document REF-PS-066 Rev 2.0 (2025) rather than on the G98 documents page. The same document states there is no requirement to contact SSEN prior to installation.",
+        "notification_route_open_to_householder": true,
+        "notification_route_note": "SSEN addresses 'Customer/Installer', the only operator consulted that names the customer as a possible notifier. Forms are emailed to a published address.",
+        "inform_before_commissioning_required": false
       }
-    ]
+    ],
+    "national_rule": {
+      "deadline_days": 28,
+      "inclusive_of_commissioning_day": true,
+      "quote": "the Installer is required to ensure that the DNO is made aware of the Micro-generator installation before the time of commissioning or no later than 28 days (inclusive of the day of commissioning) after commissioning",
+      "source_document": "ENA Engineering Recommendation G98, section 1.1 (restated at 8.3.1)",
+      "source_url": "https://www.energynetworks.org/assets/images/Publications/2024/240522%20erec-g98-557469.pdf",
+      "legal_basis": "Electricity Safety, Quality and Continuity Regulations 2002 Regulation 22(2)(c), and the Certificate of Exemption granted by the Health and Safety Executive in August 2008",
+      "is_legal_requirement": true,
+      "duty_holder": "the installer",
+      "duty_holder_quote": "Your installer must notify the DNO within 28 days of commissioning the generating unit, and provide them with information on the installation. This is a legal requirement.",
+      "duty_holder_source": "ENA Distributed Generation Connection Guide: G98 for Single Premises",
+      "duty_holder_source_url": "https://www.energynetworks.org/assets/images/Resource%20library/G98%20Single%20Premises.pdf",
+      "form": "G98 Form B, the Installation Document at Appendix 3 of EREC G98",
+      "applies_to_diy_householder": null,
+      "applies_to_diy_householder_note": "EREC G98 places the duty on the installer. No primary source consulted states what a householder who installs a plug-in device without an installer must do. This is recorded as unresolved rather than guessed.",
+      "not_referenced_by_si_2026_848": true,
+      "not_referenced_by_si_2026_848_note": "The full text of SI 2026/848 was read on 2026-08-01. It amends product safety requirements and does not mention EREC G98, DNO notification, or any connection procedure. The notification framework is separate from the legalisation.",
+      "last_verified": "2026-08-01"
+    },
+    "deadline_uniformity": "uniform at 28 days nationally, with SP Energy Networks publishing 30 days for its commissioning confirmation form"
   }
 }

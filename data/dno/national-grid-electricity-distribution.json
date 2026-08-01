@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "last_updated": "2026-08-01",
   "source": "https://balconysolarhub.co.uk/developers/",
   "license": {
@@ -40,12 +40,18 @@
   "licence_area_count": 4,
   "notification": {
     "type": "post-install notification, not approval (single premises)",
-    "g98_notify_url": "https://connections.nationalgrid.co.uk/g98-connection-procedures",
+    "g98_notify_url": "https://connections.nationalgrid.co.uk/get-connected/solar-and-wind/micro-generation-single-g98",
     "g98_notify_url_http_status": 200,
     "g98_notify_url_checked": "2026-08-01",
     "form_single_premises": "G98 Form B",
-    "deadline_days": null,
-    "deadline_quote": null,
+    "deadline_days": 28,
+    "deadline_source": "stated on the operator's own page",
+    "deadline_quote": "You must notify us of the generation installation within 28 days of commissioning",
+    "deadline_url": "https://connections.nationalgrid.co.uk/get-connected/solar-and-wind/micro-generation-single-g98",
+    "deadline_context": "Stated twice on the operator's own G98 single-premises notification page, which offers an online notification form.",
+    "inform_before_commissioning_required": false,
+    "route_open_to_householder": null,
+    "route_note": "The online form asks for installer and customer contact information. Whether it can be completed without an installer is not stated.",
     "fee": null,
     "fee_note": "not verified - no operator page consulted states a fee for a single-premises G98 notification, and we do not infer that it is free",
     "legal_basis": "Electricity Safety, Quality and Continuity Regulations 2002",
@@ -54,8 +60,26 @@
       "url": "https://connect-direct.energynetworks.org",
       "http_status_checked": 200,
       "last_verified": "2026-08-01"
-    },
-    "deadline_note": "not stated on the operator's own G98 page as read on 2026-08-01"
+    }
+  },
+  "national_rule": {
+    "deadline_days": 28,
+    "inclusive_of_commissioning_day": true,
+    "quote": "the Installer is required to ensure that the DNO is made aware of the Micro-generator installation before the time of commissioning or no later than 28 days (inclusive of the day of commissioning) after commissioning",
+    "source_document": "ENA Engineering Recommendation G98, section 1.1 (restated at 8.3.1)",
+    "source_url": "https://www.energynetworks.org/assets/images/Publications/2024/240522%20erec-g98-557469.pdf",
+    "legal_basis": "Electricity Safety, Quality and Continuity Regulations 2002 Regulation 22(2)(c), and the Certificate of Exemption granted by the Health and Safety Executive in August 2008",
+    "is_legal_requirement": true,
+    "duty_holder": "the installer",
+    "duty_holder_quote": "Your installer must notify the DNO within 28 days of commissioning the generating unit, and provide them with information on the installation. This is a legal requirement.",
+    "duty_holder_source": "ENA Distributed Generation Connection Guide: G98 for Single Premises",
+    "duty_holder_source_url": "https://www.energynetworks.org/assets/images/Resource%20library/G98%20Single%20Premises.pdf",
+    "form": "G98 Form B, the Installation Document at Appendix 3 of EREC G98",
+    "applies_to_diy_householder": null,
+    "applies_to_diy_householder_note": "EREC G98 places the duty on the installer. No primary source consulted states what a householder who installs a plug-in device without an installer must do. This is recorded as unresolved rather than guessed.",
+    "not_referenced_by_si_2026_848": true,
+    "not_referenced_by_si_2026_848_note": "The full text of SI 2026/848 was read on 2026-08-01. It amends product safety requirements and does not mention EREC G98, DNO notification, or any connection procedure. The notification framework is separate from the legalisation.",
+    "last_verified": "2026-08-01"
   },
   "limits": {
     "legal_product_cap_w": 800,
@@ -73,6 +97,6 @@
     "source_url": "https://www.legislation.gov.uk/uksi/2026/848/made",
     "note": "Regulation 3 of SI 2026/848 extends to England and Wales and Scotland. All licence areas in this file are within that extent."
   },
-  "source_url": "https://connections.nationalgrid.co.uk/g98-connection-procedures",
+  "source_url": "https://connections.nationalgrid.co.uk/get-connected/solar-and-wind/micro-generation-single-g98",
   "last_verified": "2026-08-01"
 }

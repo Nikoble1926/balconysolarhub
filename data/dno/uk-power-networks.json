@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "last_updated": "2026-08-01",
   "source": "https://balconysolarhub.co.uk/developers/",
   "license": {
@@ -40,7 +40,13 @@
     "g98_notify_url_checked": "2026-08-01",
     "form_single_premises": "G98 Form B",
     "deadline_days": 28,
+    "deadline_source": "stated on the operator's own page",
     "deadline_quote": "all you need to do is notify us within 28 days of the installation",
+    "deadline_url": "https://www.ukpowernetworks.co.uk/smart-connect",
+    "deadline_context": "Stated on the Smart Connect installer portal, which covers low carbon technology installations at a house or small business up to 69 kVA. It is not a G98-specific page and it is not open to the public.",
+    "inform_before_commissioning_required": null,
+    "route_open_to_householder": false,
+    "route_note": "Only approved installers can use Smart Connect on behalf of customers. Quoted verbatim from the operator's page on 2026-08-01.",
     "fee": null,
     "fee_note": "not verified - no operator page consulted states a fee for a single-premises G98 notification, and we do not infer that it is free",
     "legal_basis": "Electricity Safety, Quality and Continuity Regulations 2002",
@@ -50,6 +56,25 @@
       "http_status_checked": 200,
       "last_verified": "2026-08-01"
     }
+  },
+  "national_rule": {
+    "deadline_days": 28,
+    "inclusive_of_commissioning_day": true,
+    "quote": "the Installer is required to ensure that the DNO is made aware of the Micro-generator installation before the time of commissioning or no later than 28 days (inclusive of the day of commissioning) after commissioning",
+    "source_document": "ENA Engineering Recommendation G98, section 1.1 (restated at 8.3.1)",
+    "source_url": "https://www.energynetworks.org/assets/images/Publications/2024/240522%20erec-g98-557469.pdf",
+    "legal_basis": "Electricity Safety, Quality and Continuity Regulations 2002 Regulation 22(2)(c), and the Certificate of Exemption granted by the Health and Safety Executive in August 2008",
+    "is_legal_requirement": true,
+    "duty_holder": "the installer",
+    "duty_holder_quote": "Your installer must notify the DNO within 28 days of commissioning the generating unit, and provide them with information on the installation. This is a legal requirement.",
+    "duty_holder_source": "ENA Distributed Generation Connection Guide: G98 for Single Premises",
+    "duty_holder_source_url": "https://www.energynetworks.org/assets/images/Resource%20library/G98%20Single%20Premises.pdf",
+    "form": "G98 Form B, the Installation Document at Appendix 3 of EREC G98",
+    "applies_to_diy_householder": null,
+    "applies_to_diy_householder_note": "EREC G98 places the duty on the installer. No primary source consulted states what a householder who installs a plug-in device without an installer must do. This is recorded as unresolved rather than guessed.",
+    "not_referenced_by_si_2026_848": true,
+    "not_referenced_by_si_2026_848_note": "The full text of SI 2026/848 was read on 2026-08-01. It amends product safety requirements and does not mention EREC G98, DNO notification, or any connection procedure. The notification framework is separate from the legalisation.",
+    "last_verified": "2026-08-01"
   },
   "limits": {
     "legal_product_cap_w": 800,
