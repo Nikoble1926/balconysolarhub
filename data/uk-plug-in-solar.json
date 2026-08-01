@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.2",
+  "schema_version": "1.3",
   "last_updated": "2026-08-01",
   "source": "https://balconysolarhub.co.uk/developers/",
   "license": {
@@ -281,20 +281,30 @@
         "g98_notify_url_checked": "2026-08-01",
         "notification_type": "post-install notification, not approval (single premises)",
         "notification_deadline_days": 28,
-        "notification_deadline_quote": null,
+        "notification_deadline_quote": "your installer will need to notify Northern Powergrid within 28 days of connecting the equipment under the G98 procedure",
         "fee": null,
         "fee_note": "not verified - no operator page consulted states a fee for a single-premises G98 notification, and we do not infer that it is free",
         "single_phase_limit_kw": 3.68,
         "single_phase_limit_amps": 16,
         "form_single_premises": "G98 Form B",
-        "source_url": "https://www.northernpowergrid.com/connections-and-services/electric-vehicles-solar-and-heat-pumps/solar-panels-generation-battery-storage/small-scale-generation",
+        "source_url": "https://www.northernpowergrid.com/micro-generation",
         "last_verified": "2026-08-01",
-        "notification_deadline_source": "national EREC G98 rule; not restated on the operator's own page",
-        "notification_deadline_url": null,
-        "notification_deadline_context": "The operator's own small-scale generation page does not restate the deadline. The national EREC G98 rule applies regardless. The operator publishes G98 Form B as 'Notification of microgeneration installations at a single premises'.",
+        "notification_deadline_source": "stated on the operator's own page",
+        "notification_deadline_url": "https://www.northernpowergrid.com/micro-generation",
+        "notification_deadline_context": "Stated on the operator's own micro-generation page. The operator also publishes \"Form A3-2 must be sent to the DNO within 28 days of commissioning\".",
         "notification_route_open_to_householder": null,
         "notification_route_note": null,
-        "inform_before_commissioning_required": null
+        "inform_before_commissioning_required": null,
+        "notification_deadline_secondary_quote": "Form A3-2 must be sent to the DNO within 28 days of commissioning",
+        "verification_note": "The operator's pages time out on automated fetch. These quotes were read and verified on 2026-08-01 by a second reviewer working from northernpowergrid.com in a browser, not by automated retrieval. Recorded here so the provenance is visible rather than implied.",
+        "form_reference_discrepancy": {
+          "operator_page_references": "Form A3-2",
+          "operator_forms_page_publishes": "G98 Form B - Notification of microgeneration installations at a single premises",
+          "operator_forms_page_url": "https://www.northernpowergrid.com/connections-and-services/connections-application-forms",
+          "observation": "Form A3-2 is listed by other operators among their G99 forms, for example SSEN publishes it as the G99 ENA Fast Track Commissioning Form A3-2. Northern Powergrid separately publishes G98 Form B for single-premises microgeneration.",
+          "resolved": false,
+          "note": "Both references are recorded as published. We do not assert which form a single-premises plug-in installation requires here, and we have not harmonised the reference to Form B for the sake of consistency."
+        }
       },
       {
         "dno_name": "Electricity North West",

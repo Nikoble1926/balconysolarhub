@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.2",
+  "schema_version": "1.3",
   "last_updated": "2026-08-01",
   "source": "https://balconysolarhub.co.uk/developers/",
   "license": {
@@ -142,7 +142,7 @@
         "Yorkshire"
       ],
       "notification_deadline_days": 28,
-      "notification_deadline_source": "national EREC G98 rule; not restated on the operator's own page",
+      "notification_deadline_source": "stated on the operator's own page",
       "route_open_to_householder": null
     },
     {
