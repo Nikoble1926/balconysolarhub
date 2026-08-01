@@ -67,6 +67,19 @@ A machine-readable file covering two things: <strong>what SI 2026/848 actually s
 </tbody></table>
 <p class="tag" style="margin:8px 0 0">Each record also carries <code>g98_notify_url</code>, the HTTP status we saw when we checked it, the date of that check, the verbatim deadline quote where one exists, and <code>fee</code> &mdash; which is <code>null</code> for every operator, because none of them states one and we are not going to infer that it is free.</p>
 
+<h3 style="margin-top:24px">Per-operator files</h3>
+<p>If you only care about one network, take one file. Each is self-contained &mdash; it repeats the limits and the legislation summary so you do not have to fetch the parent dataset as well.</p>
+<div class="note" style="margin:12px 0">
+<p style="margin:0 0 8px"><strong>Index &mdash; includes an MPAN lookup</strong></p>
+<p style="margin:0 0 12px"><code>/data/dno/index.json</code></p>
+<p style="margin:0 0 6px"><strong>One per operator</strong></p>
+<p style="margin:0;font-size:14px;line-height:1.8"><code>/data/dno/uk-power-networks.json</code><br><code>/data/dno/national-grid-electricity-distribution.json</code><br><code>/data/dno/sp-energy-networks.json</code><br><code>/data/dno/northern-powergrid.json</code><br><code>/data/dno/electricity-north-west.json</code><br><code>/data/dno/scottish-and-southern-electricity-networks.json</code></p>
+</div>
+<p>The index carries <code>mpan_lookup</code>, keyed by distributor ID 10 to 23. The first two digits of a UK meter&rsquo;s MPAN identify the distributor, so you can go straight from a meter to the right operator file:</p>
+<div class="note" style="margin:12px 0"><pre style="margin:0;white-space:pre-wrap;font-size:13.5px;line-height:1.5"><code>idx = requests.get(".../data/dno/index.json").json()
+slug = idx["mpan_lookup"]["16"]     # -> "electricity-north-west"
+dno  = requests.get(f".../data/dno/{slug}.json").json()
+dno["notification"]["deadline_days"]   # -> None, and deadline_note says why</code></pre></div>
 <h3 style="margin-top:24px">3. Technical limits &mdash; two caps, not one</h3>
 <div class="note" style="margin:12px 0">
 <p style="margin:0 0 8px"><strong>800 W</strong> is the <em>product</em> cap. It decides whether a device counts as a plug-in microgenerator under SI 2026/848.</p>

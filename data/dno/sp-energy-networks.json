@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0",
+  "last_updated": "2026-08-01",
+  "source": "https://balconysolarhub.co.uk/developers/",
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "attribution": "BalconySolarHub (balconysolarhub.co.uk)"
+  },
+  "disclaimer": "Informational, not legal advice. Verify with the legislation, the Energy Networks Association and your own Distribution Network Operator before relying on any value here.",
+  "parent_dataset": "https://balconysolarhub.co.uk/data/uk-plug-in-solar.json",
+  "slug": "sp-energy-networks",
+  "page_url": "https://balconysolarhub.co.uk/data/dno/sp-energy-networks.json",
+  "dno_name": "SP Energy Networks",
+  "dno_short": "SPEN",
+  "licence_areas": [
+    {
+      "mpan_distributor_id": 13,
+      "region": "Cheshire, Merseyside and Northern Wales"
+    },
+    {
+      "mpan_distributor_id": 18,
+      "region": "Southern Scotland"
+    }
+  ],
+  "regions_covered": [
+    "Cheshire, Merseyside and Northern Wales",
+    "Southern Scotland"
+  ],
+  "licence_area_count": 2,
+  "notification": {
+    "type": "post-install notification, not approval (single premises)",
+    "g98_notify_url": "https://www.spenergynetworks.co.uk/pages/single_g98_generator_connections.aspx",
+    "g98_notify_url_http_status": 200,
+    "g98_notify_url_checked": "2026-08-01",
+    "form_single_premises": "G98 Form B",
+    "deadline_days": 30,
+    "deadline_quote": "within 30 days",
+    "fee": null,
+    "fee_note": "not verified - no operator page consulted states a fee for a single-premises G98 notification, and we do not infer that it is free",
+    "legal_basis": "Electricity Safety, Quality and Continuity Regulations 2002",
+    "national_submission_route": {
+      "name": "ENA Connect Direct",
+      "url": "https://connect-direct.energynetworks.org",
+      "http_status_checked": 200,
+      "last_verified": "2026-08-01"
+    }
+  },
+  "limits": {
+    "legal_product_cap_w": 800,
+    "legal_product_cap_applies_to": "whether a device is a plug-in microgenerator under SI 2026/848",
+    "g98_limit_amps_per_phase": 16,
+    "g98_single_phase_kw": 3.68,
+    "g98_three_phase_kw": 11.04,
+    "note": "Two different caps apply and they are often confused. 800 W is the product cap set by SI 2026/848 for something to count as a plug-in microgenerator. 3.68 kW per phase is the connection-process cap for Engineering Recommendation G98. They serve different purposes."
+  },
+  "legislation_summary": {
+    "si_number": "2026 No. 848",
+    "in_force_date": "2026-08-27",
+    "wattage_cap_w": 800,
+    "applies_in_this_dno_area": true,
+    "source_url": "https://www.legislation.gov.uk/uksi/2026/848/made",
+    "note": "Regulation 3 of SI 2026/848 extends to England and Wales and Scotland. All licence areas in this file are within that extent."
+  },
+  "source_url": "https://www.spenergynetworks.co.uk/pages/single_g98_generator_connections.aspx",
+  "last_verified": "2026-08-01"
+}
