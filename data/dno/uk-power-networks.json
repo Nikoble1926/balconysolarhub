@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "last_updated": "2026-08-01",
   "source": "https://balconysolarhub.co.uk/developers/",
   "license": {
@@ -46,7 +46,7 @@
     "deadline_context": "Stated on the Smart Connect installer portal, which covers low carbon technology installations at a house or small business up to 69 kVA. It is not a G98-specific page and it is not open to the public.",
     "inform_before_commissioning_required": null,
     "route_open_to_householder": false,
-    "route_note": "Only approved installers can use Smart Connect on behalf of customers. Quoted verbatim from the operator's page on 2026-08-01.",
+    "route_note": "Stated on two separate pages of the operator's own site, one aimed at installers and one aimed at consumers. Both read on 2026-08-01.",
     "fee": null,
     "fee_note": "not verified - no operator page consulted states a fee for a single-premises G98 notification, and we do not infer that it is free",
     "legal_basis": "Electricity Safety, Quality and Continuity Regulations 2002",
@@ -55,7 +55,24 @@
       "url": "https://connect-direct.energynetworks.org",
       "http_status_checked": 200,
       "last_verified": "2026-08-01"
-    }
+    },
+    "route_evidence": [
+      {
+        "url": "https://www.ukpowernetworks.co.uk/smart-connect",
+        "page_type": "installer portal",
+        "quote": "Only approved installers can use Smart Connect on behalf of customers",
+        "checked": "2026-08-01"
+      },
+      {
+        "url": "https://www.ukpowernetworks.co.uk/low-carbon-technology-domestic/solar-and-storage-cost-time-and-whats-involved",
+        "page_type": "consumer guidance",
+        "quote": "Only installers can notify us on behalf of customers",
+        "secondary_quote": "Since you won't be able to do the installation work yourself, the first thing you need to do is choose an installer who will handle everything for you",
+        "checked": "2026-08-01"
+      }
+    ],
+    "deadline_secondary_quote": "all they need to do is simply notify us of the installation within 28 days",
+    "deadline_secondary_url": "https://www.ukpowernetworks.co.uk/low-carbon-technology-domestic/solar-and-storage-cost-time-and-whats-involved"
   },
   "national_rule": {
     "deadline_days": 28,

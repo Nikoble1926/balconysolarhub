@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "last_updated": "2026-08-01",
   "source": "https://balconysolarhub.co.uk/developers/",
   "license": {
@@ -108,7 +108,7 @@
     "mpan_required_note": "not verified - no primary source states this explicitly"
   },
   "dno_notification": {
-    "headline_finding": "The 28-day notification deadline is not set by individual network operators. It is a national requirement in EREC G98 section 1.1, made under ESQCR 2002 Regulation 22(2)(c) and the HSE Certificate of Exemption of August 2008, and EREC G98 places the duty on the installer. SI 2026/848, which legalises plug-in solar from 27 August 2026, does not mention EREC G98, DNO notification, or any connection procedure at all. That leaves a gap: a householder who installs a plug-in device themselves has no installer to discharge the duty, and the notification portal of the largest operator by licence area, UK Power Networks, is open only to approved installers. Five of the six operators are consistent with the national 28 days; SP Energy Networks publishes 30 days for the commissioning confirmation form and separately requires notice before or at commissioning.",
+    "headline_finding": "The 28-day notification deadline is not set by individual network operators. It is a national requirement in EREC G98 section 1.1, made under regulation 22(2)(c) of the Electricity Safety, Quality and Continuity Regulations 2002 and the Health and Safety Executive's certificate of exemption of August 2008. EREC G98 places the duty to notify on the installer. SI 2026/848, which makes plug-in solar lawful from 27 August 2026, does not mention EREC G98, DNO notification, or any connection procedure. UK Power Networks, the largest operator by licence area, states on both its installer portal and its consumer guidance that only installers can notify it on behalf of customers. Five of the six operators are consistent with the national 28 days; SP Energy Networks publishes 30 days for its commissioning confirmation form and separately asks for notice before or at commissioning. This is a factual record of what each source states, not legal advice.",
     "dno_group_count": 6,
     "licence_area_count": 14,
     "licence_area_source": "https://www.energynetworks.org/operating-the-networks/whos-my-network-operator",
@@ -152,8 +152,25 @@
         "notification_deadline_url": "https://www.ukpowernetworks.co.uk/smart-connect",
         "notification_deadline_context": "Stated on the Smart Connect installer portal, which covers low carbon technology installations at a house or small business up to 69 kVA. It is not a G98-specific page and it is not open to the public.",
         "notification_route_open_to_householder": false,
-        "notification_route_note": "Only approved installers can use Smart Connect on behalf of customers. Quoted verbatim from the operator's page on 2026-08-01.",
-        "inform_before_commissioning_required": null
+        "notification_route_note": "Stated on two separate pages of the operator's own site, one aimed at installers and one aimed at consumers. Both read on 2026-08-01.",
+        "inform_before_commissioning_required": null,
+        "notification_route_evidence": [
+          {
+            "url": "https://www.ukpowernetworks.co.uk/smart-connect",
+            "page_type": "installer portal",
+            "quote": "Only approved installers can use Smart Connect on behalf of customers",
+            "checked": "2026-08-01"
+          },
+          {
+            "url": "https://www.ukpowernetworks.co.uk/low-carbon-technology-domestic/solar-and-storage-cost-time-and-whats-involved",
+            "page_type": "consumer guidance",
+            "quote": "Only installers can notify us on behalf of customers",
+            "secondary_quote": "Since you won't be able to do the installation work yourself, the first thing you need to do is choose an installer who will handle everything for you",
+            "checked": "2026-08-01"
+          }
+        ],
+        "notification_deadline_secondary_quote": "all they need to do is simply notify us of the installation within 28 days",
+        "notification_deadline_secondary_url": "https://www.ukpowernetworks.co.uk/low-carbon-technology-domestic/solar-and-storage-cost-time-and-whats-involved"
       },
       {
         "dno_name": "National Grid Electricity Distribution",
@@ -344,8 +361,8 @@
         "notification_deadline_source": "stated on the operator's own page",
         "notification_deadline_url": "https://www.ssen.co.uk/globalassets/what-is-a-mpan/mpan-process-for-microgen-customers.pdf",
         "notification_deadline_context": "Stated in the operator's own MPAN process document REF-PS-066 Rev 2.0 (2025) rather than on the G98 documents page. The same document states there is no requirement to contact SSEN prior to installation.",
-        "notification_route_open_to_householder": true,
-        "notification_route_note": "SSEN addresses 'Customer/Installer', the only operator consulted that names the customer as a possible notifier. Forms are emailed to a published address.",
+        "notification_route_open_to_householder": null,
+        "notification_route_note": "The operator's document addresses \"Customer/Installer\". That identifies who completes the form; it does not state that a customer may notify without an installer. Recorded as unknown rather than read as permission.",
         "inform_before_commissioning_required": false
       }
     ],
@@ -368,6 +385,22 @@
       "not_referenced_by_si_2026_848_note": "The full text of SI 2026/848 was read on 2026-08-01. It amends product safety requirements and does not mention EREC G98, DNO notification, or any connection procedure. The notification framework is separate from the legalisation.",
       "last_verified": "2026-08-01"
     },
-    "deadline_uniformity": "uniform at 28 days nationally, with SP Energy Networks publishing 30 days for its commissioning confirmation form"
+    "deadline_uniformity": "uniform at 28 days nationally, with SP Energy Networks publishing 30 days for its commissioning confirmation form",
+    "headline_finding_note": "This field reports what primary sources say. It deliberately draws no conclusion about what a householder installing a plug-in device without an installer is required to do; see national_rule.applies_to_diy_householder, which is null.",
+    "is_legal_advice": false,
+    "route_open_to_householder_summary": {
+      "false": [
+        "UKPN"
+      ],
+      "true": [],
+      "null": [
+        "NGED",
+        "SPEN",
+        "NPg",
+        "ENWL",
+        "SSEN"
+      ],
+      "note": "false is recorded only where the operator states it on its own pages. Everything else is null because the operator does not address the question."
+    }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "last_updated": "2026-08-01",
   "source": "https://balconysolarhub.co.uk/developers/",
   "license": {
@@ -17,8 +17,24 @@
   },
   "count": 6,
   "licence_area_count": 14,
-  "headline_finding": "The 28-day notification deadline is not set by individual network operators. It is a national requirement in EREC G98 section 1.1, made under ESQCR 2002 Regulation 22(2)(c) and the HSE Certificate of Exemption of August 2008, and EREC G98 places the duty on the installer. SI 2026/848, which legalises plug-in solar from 27 August 2026, does not mention EREC G98, DNO notification, or any connection procedure at all. That leaves a gap: a householder who installs a plug-in device themselves has no installer to discharge the duty, and the notification portal of the largest operator by licence area, UK Power Networks, is open only to approved installers. Five of the six operators are consistent with the national 28 days; SP Energy Networks publishes 30 days for the commissioning confirmation form and separately requires notice before or at commissioning.",
+  "headline_finding": "The 28-day notification deadline is not set by individual network operators. It is a national requirement in EREC G98 section 1.1, made under regulation 22(2)(c) of the Electricity Safety, Quality and Continuity Regulations 2002 and the Health and Safety Executive's certificate of exemption of August 2008. EREC G98 places the duty to notify on the installer. SI 2026/848, which makes plug-in solar lawful from 27 August 2026, does not mention EREC G98, DNO notification, or any connection procedure. UK Power Networks, the largest operator by licence area, states on both its installer portal and its consumer guidance that only installers can notify it on behalf of customers. Five of the six operators are consistent with the national 28 days; SP Energy Networks publishes 30 days for its commissioning confirmation form and separately asks for notice before or at commissioning. This is a factual record of what each source states, not legal advice.",
+  "headline_finding_note": "This field reports what primary sources say. It deliberately draws no conclusion about what a householder installing a plug-in device without an installer is required to do; see national_rule.applies_to_diy_householder, which is null.",
+  "is_legal_advice": false,
   "deadline_uniformity": "uniform at 28 days nationally, with SP Energy Networks publishing 30 days for its commissioning confirmation form",
+  "route_open_to_householder_summary": {
+    "false": [
+      "UKPN"
+    ],
+    "true": [],
+    "null": [
+      "NGED",
+      "SPEN",
+      "NPg",
+      "ENWL",
+      "SSEN"
+    ],
+    "note": "false is recorded only where the operator states it on its own pages. Everything else is null because the operator does not address the question."
+  },
   "national_rule": {
     "deadline_days": 28,
     "inclusive_of_commissioning_day": true,
@@ -159,7 +175,7 @@
       ],
       "notification_deadline_days": 28,
       "notification_deadline_source": "stated on the operator's own page",
-      "route_open_to_householder": true
+      "route_open_to_householder": null
     }
   ]
 }

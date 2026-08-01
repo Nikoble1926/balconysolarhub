@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "last_updated": "2026-08-01",
   "source": "https://balconysolarhub.co.uk/developers/",
   "license": {
@@ -40,8 +40,8 @@
     "deadline_url": "https://www.ssen.co.uk/globalassets/what-is-a-mpan/mpan-process-for-microgen-customers.pdf",
     "deadline_context": "Stated in the operator's own MPAN process document REF-PS-066 Rev 2.0 (2025) rather than on the G98 documents page. The same document states there is no requirement to contact SSEN prior to installation.",
     "inform_before_commissioning_required": false,
-    "route_open_to_householder": true,
-    "route_note": "SSEN addresses 'Customer/Installer', the only operator consulted that names the customer as a possible notifier. Forms are emailed to a published address.",
+    "route_open_to_householder": null,
+    "route_note": "The operator's document addresses \"Customer/Installer\". That identifies who completes the form; it does not state that a customer may notify without an installer. Recorded as unknown rather than read as permission.",
     "fee": null,
     "fee_note": "not verified - no operator page consulted states a fee for a single-premises G98 notification, and we do not infer that it is free",
     "legal_basis": "Electricity Safety, Quality and Continuity Regulations 2002",
