@@ -34,7 +34,7 @@
 <li>is designed to operate in parallel with a distributor&rsquo;s network; and</li>
 <li>is not designed to import electrical energy from a low voltage consumer&rsquo;s installation for the purpose of storing energy for later supply, other than for control or auxiliary functions permitted by the Plug-in Solar Device Interim Product Specification;</li>
 </ol>
-<p><strong>We are not aware of any product yet certified to the Interim Product Specification v2.</strong> Before buying for the plug-in route, ask whether the device is listed on the <strong>ENA Type Test Register</strong> with confirmation that it has been assessed as compliant &mdash; there is no third-party certification against the specification itself, and a device merely submitted for registration does not count (IPS v2 &sect;7). We have not been able to confirm whether that register is publicly searchable, so this is a question for the retailer. We do not list any product here as compliant, because we know of none.</p>
+<p><strong>We are not aware of any product yet certified to the Interim Product Specification v2.</strong> Before buying for the plug-in route, check the <a href="https://connect-direct.energynetworks.org" rel="noopener" target="_blank">ENA Type Test Register</a> yourself &mdash; it is public and needs no login. Filter <em>Type</em> to &ldquo;Plug-in Solar&rdquo;. Read on 5 August 2026 at 20:25 it showed <strong>&ldquo;Showing 4 devices of 4&rdquo;</strong>: two from Anker and two from GoodWe, and all four carried the status <strong>&ldquo;Non-compliant&rdquo;</strong>, described there as &ldquo;This device has been assessed as non-compliant with ENA standards&rdquo;. There is no third-party certification against the specification itself, and IPS v2 &sect;7 says a device merely submitted for registration does not count. Statuses change &mdash; check the register rather than trusting this page. We do not list any product here as compliant, because we know of none.</p>
 <p><strong>Why the plug needed its own route.</strong> Regulation 2(2) inserts a new paragraph (3A) into the 1994 Plugs and Sockets Regulations so that a notified body can approve a plug type which does <em>not</em> conform to BS 1363 &mdash; because &ldquo;BS 1363 contains a provision which prohibits or restricts the use of the plug for the connection of an electricity-generating device to a socket-outlet&rdquo;. Coverage saying a plug-in kit &ldquo;must be BS 1363&rdquo; has it backwards.</p>
 <p>The requirement sits inside the definition, so a device that does not meet all five limbs never reaches the new route at all. For a worked example on two products people are already buying, see <a href="/compare/ecoflow-stream-vs-anker-solix/">EcoFlow STREAM vs Anker SOLIX</a>.</p>
 <p class="tag">Detailed figures (voltage, current, DC panel wattage, fuse rating, devices per household) sit in the Interim Product Specification v2, not in the regulations &mdash; so we do not quote numbers here that the legislation itself does not state.</p>
@@ -78,6 +78,38 @@
 <p><strong>One device per household, not per circuit.</strong> Section 1, verbatim: &ldquo;NOTE: While this specification permits one device per final circuit, GB network connection requirements also apply. As of publication, current network requirements Engineering Recommendation G98 Issue 2 Amendment 1 2026 restrict this to one device per household, which applies unless and until that is amended.&rdquo; The limit comes from G98, not from the specification, and the note says it can change.</p>
 <p><strong>No adaptors, and the plug is the manufacturer&rsquo;s.</strong> Section 6.2.3: &ldquo;The use of multi-way adaptors, travel adaptors, RCD adaptors and plug convertors shall not be permitted.&rdquo; Section 6.2.3.2 says what the plug must be: &ldquo;Plug-in solar intended for connection to UK sockets shall use plugs designed to BS 1363-1&rdquo;, with &ldquo;partially insulated pins to prevent access to live conductive parts&rdquo; and a &ldquo;non-rewireable moulded plug fitted with a BS 1362 fuse not exceeding 5A&rdquo;. So it is still a BS 1363 plug. The approval route in the instrument exists because BS 1363 restricts using a plug to connect a generating device to a socket &mdash; not because the plug should be something else.</p>
 <p class="tag" style="color:var(--mut)">Read from the Plug-in Solar Device Interim Product Specification v2.0 (July 2026) on gov.uk, 5 August 2026.</p>
+</div>
+
+<div class="article">
+<h3 id="ena-register">How to check a device yourself</h3>
+<p>This is the part you do not need us for. IPS v2 &sect;7 requires manufacturers to
+&ldquo;register devices on the ENA Type Test Register&hellip; and obtain confirmation that the
+device has been assessed and identified as compliant prior to placing them on the market&rdquo;.
+That register is public:</p>
+<ol>
+<li>Open <a href="https://connect-direct.energynetworks.org" rel="noopener" target="_blank">connect-direct.energynetworks.org</a> and go to the Live Device Register. No account is needed to search.</li>
+<li>Open <strong>Filters</strong> and set <strong>Type</strong> to &ldquo;Plug-in Solar&rdquo;.</li>
+<li>Read the <strong>Compliance Status</strong> column for the device you are considering.</li>
+<li>Ask the retailer for the <strong>System Reference</strong> so you can look up that exact entry rather than a similar model name.</li>
+</ol>
+<p>Read on 5 August 2026 at 20:25, the filter returned <strong>&ldquo;Showing 4 devices of 4&rdquo;</strong>:</p>
+<table>
+<thead><tr><th>System Reference</th><th>Manufacturer</th><th>Model</th><th>kW</th><th>Published</th><th>Status</th></tr></thead>
+<tbody>
+<tr><td>ANKER/20925/V1</td><td>anker innovations limited</td><td>AE1032Z1</td><td>2.5</td><td>4/8/2026</td><td>&ldquo;Non-compliant&rdquo;</td></tr>
+<tr><td>ANKER/20920/V1</td><td>anker innovations limited</td><td>AE1032Z1-20</td><td>0.8</td><td>3/8/2026</td><td>&ldquo;Non-compliant&rdquo;</td></tr>
+<tr><td>GOODW/20844/V1</td><td>GoodWe Technologies Co., Ltd.</td><td>GW2K-EMA-UK-G10</td><td>0.8</td><td>29/7/2026</td><td>&ldquo;Non-compliant&rdquo;</td></tr>
+<tr><td>GOODW/20843/V1</td><td>GoodWe Technologies Co., Ltd.</td><td>GW3K-EMA-UK-G10</td><td>0.8</td><td>29/7/2026</td><td>&ldquo;Non-compliant&rdquo;</td></tr>
+</tbody>
+</table>
+<p>&ldquo;Non-compliant&rdquo; is the register&rsquo;s own word, and the register describes it as
+&ldquo;This device has been assessed as non-compliant with ENA standards&rdquo;. It is an
+assessment of <em>these registration entries</em> against ENA requirements, not a statement
+about anything else those manufacturers sell, and not a claim by us about any product. All four
+entries were published within the eight days before we read them, so this is a snapshot and it
+will move. We have not matched any of these model numbers to a retail product, and you should
+not assume they correspond to anything on our other pages.</p>
+<p class="tag" style="color:var(--mut)">ENA Type Test Register read at connect-direct.energynetworks.org on 5 August 2026 at 20:25. The register that used to live at ena-eng.org closed in April 2024 and its data moved here.</p>
 </div>
 
 <h2 style="margin-top:32px">What each route requires, and from when</h2>
