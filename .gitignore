@@ -1,0 +1,36 @@
+# dependencies
+node_modules/
+
+# Cloudflare Wrangler local state and local secrets
+.wrangler/
+.dev.vars
+.dev.vars.*
+
+# environment / secrets
+.env
+.env.*
+*.pem
+*.key
+*.p12
+
+# deploy mirror (lives at D:\repos\_deploy, listed defensively in case it is
+# ever created inside the repo)
+_deploy/
+
+# OS noise
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# editors
+.vscode/
+.idea/
+*.swp
+
+# Note: wrangler.toml is deliberately NOT ignored. It carries project name and
+# build config, not secrets - Cloudflare secrets live in .dev.vars or the
+# dashboard. Ignoring it would lose real configuration.
+#
+# Note: _drafts/ and _templates/ are deliberately NOT ignored. They are kept
+# in the repo on purpose and excluded at deploy time by robocopy /XD, not
+# by git.
