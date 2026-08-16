@@ -1,0 +1,64 @@
+<!doctype html><html lang="en-GB"><head><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/favicon-96.png" sizes="96x96" type="image/png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>G98 Protection Settings: What UK Kit Must Survive at 253 V (2026)</title>
+<meta name="description" content="The G98 over voltage trips are 262.2 V and 273.7 V, and a certified unit must stay connected at 253 V for 90 minutes. An EU APsystems EZ1-M stops at 253 V. Sourced to a type test certificate and the manufacturer datasheet.">
+<link rel="canonical" href="https://balconysolarhub.co.uk/guides/g98-protection-settings/">
+<meta property="og:type" content="article"><meta property="og:title" content="G98 Protection Settings: What UK Kit Must Survive at 253 V"><meta property="og:description" content="The G98 trips are 262.2 V and 273.7 V. A certified unit must stay connected at 253 V for 90 minutes."><meta property="og:url" content="https://balconysolarhub.co.uk/guides/g98-protection-settings/"><meta property="og:image" content="https://balconysolarhub.co.uk/og-image.png">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="G98 Protection Settings at 253 V"><meta name="twitter:description" content="What a G98-certified unit must survive, and where an EU device stops."><meta name="twitter:image" content="https://balconysolarhub.co.uk/og-image.png">
+<meta name="robots" content="index,follow"><script>try{var t=localStorage.getItem("theme")||"light";document.documentElement.setAttribute("data-theme",t)}catch(e){}</script><link rel="stylesheet" href="/style.css"><script src="/theme.js" defer></script><script src="/film.js" defer></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"G98 Protection Settings: What UK Kit Must Survive at 253 V","author":{"@type":"Organization","name":"BalconySolarHub"},"publisher":{"@type":"Organization","name":"BalconySolarHub"},"datePublished":"2026-08-16","dateModified":"2026-08-16","image":"https://balconysolarhub.co.uk/og-image.png","mainEntityOfPage":"https://balconysolarhub.co.uk/guides/g98-protection-settings/","inLanguage":"en-GB"}</script></head><body>
+<header class="site"><div class="wrap bar"><a class="logo" href="/"><span class="sun"></span>BalconySolarHub</a><nav class="main"><a href="/">Home</a><a href="/legal/">UK Legal</a><a href="/g98-notification/">G98 Walkthrough</a><a href="/best-kits-2026/">Best Kits</a><a href="/savings-calculator/">Calculator</a><a href="/guides/800w-limit/">800W Limit</a><a href="/faq/">FAQ</a><a href="/about/">About</a></nav></div></header>
+<main><div class="wrap"><div class="crumbs"><a href="/">Home</a> &rsaquo; G98 protection settings</div></div>
+<section><div class="wrap"><article class="article">
+<h1>What G98 actually requires at 253 V, and why an EU kit drops out first</h1>
+<div class="answer" style="margin:14px 0 18px;padding:14px 16px;background:#f0f9ff;border-left:4px solid #0ea5e9;border-radius:6px;font-size:17px;line-height:1.55"><strong>Quick answer:</strong> A UK unit certified to G98 must <strong>stay connected at 253 V for 90 minutes</strong>. Its first over voltage trip is at <strong>262.2 V</strong> after 1 second. An APsystems EZ1-M sold in the EU has a published output range that <strong>ends at 253 V</strong>. That is the gap: the EU device stops where G98 requires a UK device to keep working.</div>
+<h2>1. The G98 protection settings</h2>
+<div class="article">
+<p>These are the settings a single-phase unit was type tested to under <strong>Engineering Recommendation G98/1-4:2019</strong>. They come from certificate of compliance <strong>U20-0161</strong>, issued on 18 March 2020 by Bureau Veritas Consumer Products Services Germany GmbH under DIN EN ISO/IEC 17065, report 16TH0371-G98/1_4, covering the SolarEdge SE2200H, SE3000H, SE3500H and SE3680H.</p>
+<table>
+<thead><tr><th>Protection</th><th>Setting</th><th>Trip time</th></tr></thead>
+<tbody>
+<tr><td>Over voltage, stage 1</td><td>262,2 V</td><td>1,0 s</td></tr>
+<tr><td>Over voltage, stage 2</td><td>273,7 V</td><td>0,5 s</td></tr>
+<tr><td>Under voltage</td><td>184 V</td><td>2,5 s</td></tr>
+<tr><td>Under frequency, stage 1</td><td>47,5 Hz</td><td>20 s</td></tr>
+<tr><td>Under frequency, stage 2</td><td>47 Hz</td><td>0,5 s</td></tr>
+<tr><td>Over frequency, stage 2</td><td>52 Hz</td><td>0,5 s</td></tr>
+</tbody>
+</table>
+<p class="tag" style="color:var(--mut)">Values are reproduced with the decimal comma the certificate itself uses. The second over voltage stage, 273.7 V, is the one that trips in half a second; the first allows a full second.</p>
+<p>The certificate also records what happens after a trip: <em>&ldquo;At 266,2V &mdash; Confirmation that the Generating Unit does not re-connect: No reconnection&rdquo;</em>. A unit that has dropped out does not come straight back while the voltage is still high.</p>
+<p><a href="https://knowledge-center.solaredge.com/sites/kc/files/single-phase-hd-wave-certificate-of-compliance-g98-uk.pdf" target="_blank" rel="noopener">Read the certificate (PDF, SolarEdge knowledge centre)</a></p>
+</div>
+<h2 style="margin-top:28px">2. The test nobody quotes</h2>
+<div class="article">
+<p>Trip points are the part everyone repeats. The operating range test is the part that matters to a reader whose inverter keeps cutting out, and we have not seen it quoted anywhere. From the same certificate, verbatim:</p>
+<blockquote style="margin:12px 0;padding:10px 14px;border-left:3px solid var(--bd);color:var(--mut)"><em>Test 2 &mdash; Voltage = 110% of nominal (253 V), Frequency = 51,5 Hz, Period of test 90 minutes. Connection: Always connected. Limit: Always connected.</em></blockquote>
+<p>Read the limit column. The requirement is not that the unit survives 253 V. It is that it stays <strong>connected</strong> at 253 V, for an hour and a half, without interruption. 253 V is the top of the range the law allows &mdash; see <a href="/legal/#voltage">the voltage section of our legal page</a> for where that number comes from.</p>
+</div>
+<h2 style="margin-top:28px">3. Where the EU device stops</h2>
+<div class="article">
+<p>The APsystems EZ1-M and EZ1-H are common in balcony kits. The European edition of the datasheet publishes the output range as:</p>
+<blockquote style="margin:12px 0;padding:10px 14px;border-left:3px solid var(--bd);color:var(--mut)"><em>Nominal Output Voltage / Range &mdash; 230 V / 184 V &ndash; 253 V</em></blockquote>
+<p>The range <em>ends</em> at the number a G98-certified unit has to keep working at for 90 minutes. That is the whole point of this page: the EU device stops where G98 requires a UK device to keep going. Whether that produces a problem for any given household depends on the supply, and that is the next section.</p>
+<p><a href="https://global.apsystems.com/document/apsystems-ez1-m-ez1-h-series-datasheet-eu/" target="_blank" rel="noopener">APsystems EZ1-M / EZ1-H datasheet, EU edition</a></p>
+</div>
+<h2 style="margin-top:28px">4. What this does not prove</h2>
+<div class="article">
+<p>Four limits on the above, stated plainly.</p>
+<ul>
+<li>We have not read Engineering Recommendation G98 itself. The ENA does not publish it openly. What we read is a type test certificate issued against it by an accredited body, which lists the settings the unit was tested to. That is one step removed from the standard.</li>
+<li>The certificate is dated 2020 and covers string inverters, not a balcony kit. G98 settings are a property of the recommendation rather than of the product, but that is an inference on our part, not something we read.</li>
+<li>The EZ1-M is one device. We use it because its range is published, not because it is the only one or because it is the one you own.</li>
+<li>Continental European standards set their own limits, and we have not verified those against a primary document. We are not quoting a number we cannot show you.</li>
+</ul>
+</div>
+<h2 style="margin-top:28px">5. If your inverter keeps dropping out</h2>
+<div class="article">
+<p>If an inverter keeps disconnecting, two things can be true at once. The device may be configured to a range that ends lower than G98 allows. And the supply may genuinely be running high: the Energy Networks Association says so itself, and is consulting on lowering the statutory lower limit from 216 V to 207 V to give operators room below the 253 V ceiling. Establish the actual voltage at the socket across a day before blaming either.</p>
+<p>The 800W ceiling is a separate question from the voltage one &mdash; see <a href="/guides/800w-limit/">the 800W limit explained</a>. If you have not yet told your network operator the unit exists, that is the <a href="/guides/g98-uk-power-networks/">G98 notification route</a>.</p>
+</div>
+<div class="disc" style="margin-top:24px">Informational, not legal or electrical advice. Settings quoted from a type test certificate, not from Engineering Recommendation G98 itself, which the ENA does not publish openly. Last verified: 16 August 2026.</div>
+</article></div></section></main>
+<footer class="site"><div class="wrap"><div class="cols"><div><h4>BalconySolarHub</h4><p class="tag" style="color:var(--mut)">Independent, honest UK guidance for balcony / plug-in solar.</p></div><div><h4>Start here</h4><ul><li><a href="/legal/">Is plug-in solar legal in the UK?</a></li><li><a href="/best-kits-2026/">Best UK balcony solar kits 2026</a></li><li><a href="/power-stations/">Best portable power stations</a></li><li><a href="/accessories/">Accessories under &pound;50</a></li><li><a href="/savings-calculator/">Savings calculator (&pound;)</a></li></ul></div><div><h4>Learn</h4><ul><li><a href="/g98-notification/">G98 walkthrough</a></li><li><a href="/guides/800w-limit/">The 800W limit</a></li><li><a href="/guides/renters/">Renters guide</a></li><li><a href="/guides/planning-permission/">Planning permission</a></li><li><a href="/faq/">FAQ</a></li>
+<li><a href="/changelog/">Changelog</a></li></ul></div></div><div class="fdisc"><p><strong>Affiliate disclosure:</strong> reader-supported. As a participant in the Amazon Associates programme (UK), we earn from qualifying purchases.</p><p style="margin-bottom:8px"><a href="/privacy/">Privacy</a> &middot; <a href="/affiliate-disclosure/">Affiliate disclosure</a> &middot; <a href="/contact/">Contact</a> &middot; <a href="/about/">About</a></p><p>Independent UK guidance. &copy; 2026 BalconySolarHub.</p></div></div></footer></body></html>
