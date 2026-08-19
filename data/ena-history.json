@@ -1,0 +1,153 @@
+{
+ "generated_from": "data/ena-history.json",
+ "note": "Append-only event log of the ENA type test register (Type = Plug-in Solar).",
+ "events": [
+  {
+   "read_at": "2026-08-05T20:25",
+   "stamp": "5 August 2026 at 20:25",
+   "count": 4,
+   "note": "First reading of the plug-in solar filter. Four devices were listed. Individual references were not recorded at the time, so none are itemised for this reading.",
+   "devices": [],
+   "removed": [],
+   "changed": []
+  },
+  {
+   "read_at": "2026-08-14",
+   "stamp": "14 August 2026",
+   "count": 3,
+   "note": "The register’s own on-page filter returned three plug-in solar devices while its search API returned four — the filter was under-reporting. Recorded here as the filter showed it, with that caveat. References were not fully recorded.",
+   "devices": [],
+   "removed": [],
+   "changed": []
+  },
+  {
+   "read_at": "2026-08-17T20:55",
+   "stamp": "17 August 2026 at 20:55",
+   "count": 4,
+   "note": "Four devices, all listed non-compliant. Individual references were not recorded at the time, so none are itemised for this reading.",
+   "devices": [],
+   "removed": [],
+   "changed": []
+  },
+  {
+   "read_at": "2026-08-19T18:11",
+   "stamp": "19 August 2026 at 18:11",
+   "count": 11,
+   "compliant": 4,
+   "note": "Eleven plug-in solar devices. Four were listed compliant, all from UKSOL — the first plug-in solar entries on the register to carry that status. Two GoodWe entries that were present on 11 August had gone. INSTA/20951 was superseded from V1/A1 to V1/A2. Full references below.",
+   "devices": [
+    {
+     "ref": "HDMSO/21071/V1",
+     "manufacturer": "hdm solar ltd",
+     "model": "PIS0100 - PLUG-IN SOLAR KIT 1",
+     "kw": 0.8,
+     "published": "2026-08-19",
+     "status": "Non-compliant"
+    },
+    {
+     "ref": "HDMSO/21072/V1",
+     "manufacturer": "hdm solar ltd",
+     "model": "PIS0200 - PLUG-IN SOLAR KIT 2",
+     "kw": 0.8,
+     "published": "2026-08-19",
+     "status": "Non-compliant"
+    },
+    {
+     "ref": "UKSOL/21014/V1/A4",
+     "manufacturer": "uksol ltd",
+     "model": "UKSOL Plug-In Solar Pro Advanced 920W Two Panel Hybrid Mount Kit - UKS-PRO-A-2-920-MZ1 /-HYM",
+     "kw": 0.8,
+     "published": "2026-08-19",
+     "status": "Compliant"
+    },
+    {
+     "ref": "INSTA/20951/V1/A2",
+     "manufacturer": "InstaGroup",
+     "model": "HF-800-WB",
+     "kw": 0.8,
+     "published": "2026-08-19",
+     "status": "Non-compliant"
+    },
+    {
+     "ref": "SEGEN/21070/V1",
+     "manufacturer": "segen",
+     "model": "PIS-GW-BR-66H-470",
+     "kw": 0.8,
+     "published": "2026-08-19",
+     "status": "Non-compliant"
+    },
+    {
+     "ref": "FOXES/21058/V1",
+     "manufacturer": "FOXESS Co., Ltd.",
+     "model": "MQ2200-M-H",
+     "kw": 0.8,
+     "published": "2026-08-19",
+     "status": "Non-compliant"
+    },
+    {
+     "ref": "FOXES/21059/V1",
+     "manufacturer": "FOXESS Co., Ltd.",
+     "model": "MQ2200-M-AC",
+     "kw": 0.8,
+     "published": "2026-08-19",
+     "status": "Non-compliant"
+    },
+    {
+     "ref": "UKSOL/21008/V1/A4",
+     "manufacturer": "uksol ltd",
+     "model": "UKSOL Plug-In Solar Pro Compact 515W Single Panel Hybrid Mount Kit - UKS-PRO-C-1-515-MZ1 /- HYM",
+     "kw": 0.8,
+     "published": "2026-08-18",
+     "status": "Compliant"
+    },
+    {
+     "ref": "UKSOL/21002/V1/A2",
+     "manufacturer": "uksol ltd",
+     "model": "UKSOL Plug-In Solar Pro Compact 460W Single Panel Ground Mount Kit - UKS-PRO-C-1-460-MZ1-UKG",
+     "kw": 0.8,
+     "published": "2026-08-18",
+     "status": "Compliant"
+    },
+    {
+     "ref": "UKSOL/21007/V1/A3",
+     "manufacturer": "uksol ltd",
+     "model": "UKSOL Plug-In Solar Pro Duo 890W Two Panel Hybrid Mount Kit - UKS-PRO-D-2-890-MZ1 /- HYM",
+     "kw": 0.8,
+     "published": "2026-08-18",
+     "status": "Compliant"
+    },
+    {
+     "ref": "ANKER/20920/V1",
+     "manufacturer": "anker innovations limited",
+     "model": "AE1032Z1-20",
+     "kw": 0.8,
+     "published": "2026-08-03",
+     "status": "Non-compliant"
+    }
+   ],
+   "removed": [
+    {
+     "ref": "GOODW/20844/V1/A1",
+     "manufacturer": "GoodWe Technologies Co., Ltd.",
+     "model": "GW2K-EMA-UK-G10",
+     "status": "Non-compliant"
+    },
+    {
+     "ref": "GOODW/20843/V1/A1",
+     "manufacturer": "GoodWe Technologies Co., Ltd.",
+     "model": "GW3K-EMA-UK-G10",
+     "status": "Non-compliant"
+    }
+   ],
+   "changed": [
+    {
+     "from": "INSTA/20951/V1/A1",
+     "to": "INSTA/20951/V1/A2",
+     "manufacturer": "InstaGroup",
+     "model": "HF-800-WB",
+     "status": "Non-compliant"
+    }
+   ]
+  }
+ ]
+}
