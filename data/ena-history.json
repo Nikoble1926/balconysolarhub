@@ -1126,6 +1126,240 @@
     }
    ],
    "changed": []
+  },
+  {
+   "read_at": "2026-09-01T15:48",
+   "stamp": "1 September 2026 at 15:48",
+   "count": 24,
+   "compliant": 20,
+   "note": "Automated reading. See added/removed/changed below.",
+   "devices": [
+    {
+     "ref": "ANKER/20920/V1/A2",
+     "manufacturer": "anker innovations limited",
+     "model": "Anker Solix E5000 Pro(AE1033Z1-20)+Anker SOLIX RS50S (500W) Plug-In Solar Kit",
+     "kw": 0.8,
+     "published": "2026-08-31",
+     "status": "Non-compliant"
+    },
+    {
+     "ref": "CITYP/21096/V1/A4",
+     "manufacturer": "city plumbing supplies holdings ltd",
+     "model": "CPS 2x DM465G12RT-G48HBB + Hoymiles HF-800-WB Plug-In Solar Kit  - DME-465W-2 V1.0",
+     "kw": 0.8,
+     "published": "2026-08-28",
+     "status": "Compliant"
+    },
+    {
+     "ref": "INSTA/21105/V1/A1",
+     "manufacturer": "InstaGroup",
+     "model": "INS-PPG-435",
+     "kw": 0.8,
+     "published": "2026-08-28",
+     "status": "Compliant"
+    },
+    {
+     "ref": "PERLI/21202/V1",
+     "manufacturer": "perlight solar co., ltd.",
+     "model": "Perlight PowerPlug FLEX+ 930 - PLM-PPF-M-930",
+     "kw": 0.8,
+     "published": "2026-08-27",
+     "status": "Compliant"
+    },
+    {
+     "ref": "PERLI/21200/V1",
+     "manufacturer": "perlight solar co., ltd.",
+     "model": "Perlight PowerPlug FLEX+ 500 - PLM-PPF-M-500",
+     "kw": 0.8,
+     "published": "2026-08-27",
+     "status": "Compliant"
+    },
+    {
+     "ref": "THUNE/21204/V1",
+     "manufacturer": "thunder energy",
+     "model": "Thunder Bolt 920W",
+     "kw": 0.8,
+     "published": "2026-08-27",
+     "status": "Compliant"
+    },
+    {
+     "ref": "THUNE/21203/V1",
+     "manufacturer": "thunder energy",
+     "model": "Thunder Bolt 460W",
+     "kw": 0.8,
+     "published": "2026-08-27",
+     "status": "Compliant"
+    },
+    {
+     "ref": "PERLI/21199/V1",
+     "manufacturer": "perlight solar co., ltd.",
+     "model": "Perlight PowerPlug FLEX+ 1000 - PLM-PPF-M-1000",
+     "kw": 0.8,
+     "published": "2026-08-27",
+     "status": "Compliant"
+    },
+    {
+     "ref": "PERLI/21201/V1",
+     "manufacturer": "perlight solar co., ltd.",
+     "model": "Perlight PowerPlug FLEX+ 465 - PLM-PPF-M-465",
+     "kw": 0.8,
+     "published": "2026-08-27",
+     "status": "Compliant"
+    },
+    {
+     "ref": "PERLI/21198/V1",
+     "manufacturer": "perlight solar co., ltd.",
+     "model": "Perlight PowerPlug MAX 1000 - PLM-PPM-M-1000",
+     "kw": 0.8,
+     "published": "2026-08-27",
+     "status": "Compliant"
+    },
+    {
+     "ref": "INSTA/20951/V1/A9",
+     "manufacturer": "InstaGroup",
+     "model": "INS-PPG-800",
+     "kw": 0.8,
+     "published": "2026-08-27",
+     "status": "Compliant"
+    },
+    {
+     "ref": "PERLI/21196/V1",
+     "manufacturer": "perlight solar co., ltd.",
+     "model": "Perlight PowerPlug MAX 930 - PLM-PPM-M-930",
+     "kw": 0.8,
+     "published": "2026-08-27",
+     "status": "Compliant"
+    },
+    {
+     "ref": "PERLI/21197/V1",
+     "manufacturer": "perlight solar co., ltd.",
+     "model": "Perlight PowerPlug MAX 500 - PLM-PPM-M-500",
+     "kw": 0.8,
+     "published": "2026-08-27",
+     "status": "Compliant"
+    },
+    {
+     "ref": "INSTA/21195/V1/A1",
+     "manufacturer": "InstaGroup",
+     "model": "INS-PPG2-800",
+     "kw": 0.8,
+     "published": "2026-08-27",
+     "status": "Non-compliant"
+    },
+    {
+     "ref": "PERLI/21158/V1",
+     "manufacturer": "perlight solar co., ltd.",
+     "model": "Perlight PowerPlug MAX 465 - PLM-PPM-M-465",
+     "kw": 0.8,
+     "published": "2026-08-27",
+     "status": "Compliant"
+    },
+    {
+     "ref": "ECOFL/21128/V1",
+     "manufacturer": "EcoFlow Inc.",
+     "model": "Ecoflow Plug-In Solar device/ EF-PS-800",
+     "kw": 0.8,
+     "published": "2026-08-26",
+     "status": "Non-compliant"
+    },
+    {
+     "ref": "TSUNE/21103/V1/A1",
+     "manufacturer": "TSUNESS Co., Ltd",
+     "model": "TSOL-ESK800-U",
+     "kw": 0.8,
+     "published": "2026-08-21",
+     "status": "Non-compliant"
+    },
+    {
+     "ref": "UKSOL/21014/V1/A4",
+     "manufacturer": "uksol ltd",
+     "model": "UKSOL Plug-In Solar Pro Advanced 920W Two Panel Hybrid Mount Kit - UKS-PRO-A-2-920-MZ1 /-HYM",
+     "kw": 0.8,
+     "published": "2026-08-19",
+     "status": "Compliant"
+    },
+    {
+     "ref": "UKSOL/21008/V1/A4",
+     "manufacturer": "uksol ltd",
+     "model": "UKSOL Plug-In Solar Pro Compact 515W Single Panel Hybrid Mount Kit - UKS-PRO-C-1-515-MZ1 /- HYM",
+     "kw": 0.8,
+     "published": "2026-08-18",
+     "status": "Compliant"
+    },
+    {
+     "ref": "UKSOL/21013/V1/A2",
+     "manufacturer": "uksol ltd",
+     "model": "UKSOL Plug-In Solar Pro Max 1260W Two Panel Hybrid Mount Kit - UKS-PRO-M-2-1260-MZ1 / - HYM",
+     "kw": 0.8,
+     "published": "2026-08-18",
+     "status": "Compliant"
+    },
+    {
+     "ref": "UKSOL/21012/V1/A3",
+     "manufacturer": "uksol ltd",
+     "model": "UKSOL Plug-In Solar Pro Plus 1030W Two Panel Hybrid Mount Kit - UKS-PRO-P-2-1030-MZ1 / - HYM",
+     "kw": 0.8,
+     "published": "2026-08-18",
+     "status": "Compliant"
+    },
+    {
+     "ref": "UKSOL/21003/V1/A2",
+     "manufacturer": "uksol ltd",
+     "model": "UKSOL Plug-In Solar Pro Duo 890W Two Panel Ground Mount Kit - UKS-PRO-D-2-890-MZ1-UKG",
+     "kw": 0.8,
+     "published": "2026-08-18",
+     "status": "Compliant"
+    },
+    {
+     "ref": "UKSOL/21002/V1/A2",
+     "manufacturer": "uksol ltd",
+     "model": "UKSOL Plug-In Solar Pro Compact 460W Single Panel Ground Mount Kit - UKS-PRO-C-1-460-MZ1-UKG",
+     "kw": 0.8,
+     "published": "2026-08-18",
+     "status": "Compliant"
+    },
+    {
+     "ref": "UKSOL/21007/V1/A3",
+     "manufacturer": "uksol ltd",
+     "model": "UKSOL Plug-In Solar Pro Duo 890W Two Panel Hybrid Mount Kit - UKS-PRO-D-2-890-MZ1 /- HYM",
+     "kw": 0.8,
+     "published": "2026-08-18",
+     "status": "Compliant"
+    }
+   ],
+   "removed": [
+    {
+     "ref": "OCTOQ/21124/V1",
+     "manufacturer": "",
+     "model": "",
+     "status": "Non-compliant"
+    },
+    {
+     "ref": "FOXES/21121/V1",
+     "manufacturer": "",
+     "model": "",
+     "status": "Non-compliant"
+    },
+    {
+     "ref": "TSUNE/21104/V1/A1",
+     "manufacturer": "",
+     "model": "",
+     "status": "Non-compliant"
+    },
+    {
+     "ref": "MODUL/20957/V1",
+     "manufacturer": "",
+     "model": "",
+     "status": "Non-compliant"
+    },
+    {
+     "ref": "SEGEN/21070/V1",
+     "manufacturer": "",
+     "model": "",
+     "status": "Non-compliant"
+    }
+   ],
+   "changed": []
   }
  ]
 }
