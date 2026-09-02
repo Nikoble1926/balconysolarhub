@@ -1,6 +1,6 @@
 {
-  "schema_version": "1.3",
-  "last_updated": "2026-08-01",
+  "schema_version": "1.4",
+  "last_updated": "2026-09-02",
   "source": "https://balconysolarhub.co.uk/developers/",
   "license": {
     "name": "CC BY 4.0",
@@ -49,7 +49,7 @@
     "duty_holder_source_url": "https://www.energynetworks.org/assets/images/Resource%20library/G98%20Single%20Premises.pdf",
     "form": "G98 Form B, the Installation Document at Appendix 3 of EREC G98",
     "applies_to_diy_householder": null,
-    "applies_to_diy_householder_note": "EREC G98 places the duty on the installer. No primary source consulted states what a householder who installs a plug-in device without an installer must do. This is recorded as unresolved rather than guessed.",
+    "applies_to_diy_householder_note": "EREC G98 places the duty on the installer, and still does. No primary source consulted stated what a householder who installs a plug-in device without an installer must do until the Energy Networks Association published a registration portal at https://myplugin.solar/ , read 2026-09-02, whose FAQ states that registering the device there sends the notification to the DNO, and that registration is a legal requirement. That claim is the portal's own; its Terms of Use cite 'the regulations relating to these devices' without naming them. This field stays null because EREC G98 itself is unchanged: it names the installer, not the householder.",
     "not_referenced_by_si_2026_848": true,
     "not_referenced_by_si_2026_848_note": "The full text of SI 2026/848 was read on 2026-08-01. It amends product safety requirements and does not mention EREC G98, DNO notification, or any connection procedure. The notification framework is separate from the legalisation.",
     "last_verified": "2026-08-01"
