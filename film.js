@@ -10,7 +10,7 @@ var CAPS=[
  [4300, '<b>Step 2</b> — click into the microinverter. It only fits the right way.'],
  [6100, '<b>Step 3</b> — connect the power <i>(CPS electrician today — plug-in soon)</i>.'],
  [8000, 'It\'s live — <b>your flat uses solar first</b>. Watch the meter.'],
- [9800, '<b>Step 4</b> — the free 10-min G98 form. <b>Done in about an hour.</b>']
+ [9800, '<b>Step 4</b> — the online 10-min G98 form. <b>Done in about an hour.</b>']
 ];
 var PHASES=[[150,'.p1'],[1000,'.p2'],[2600,'.p3'],[4400,'.p4'],[6100,'.p5'],[8100,'.p6'],[9700,'.p7'],
             [7600,'.flow'],[8500,'.needle'],[5100,'.fd1'],[9000,'.fd2'],[10400,'.fd3'],[11100,'.fd4']];
