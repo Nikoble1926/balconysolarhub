@@ -1,12 +1,12 @@
 /* ml-source.js - tags MailerLite signups with the page they came from.
 
    Reads <meta name="bsh:source" content="savings-calculator"> and appends a
-   hidden fields[source] input to every MailerLite form once the embed has
+   hidden fields[signup_source] input to every MailerLite form once the embed has
    rendered. Same shape as the US ml-state.js.
 
-   MailerLite only stores the value if a custom field with key "source" exists
-   in the account; if it does not, the field is simply ignored. We have not
-   read the account settings, so this may be a no-op. */
+   MailerLite stores the value against the custom field with key "signup_source"
+   (field id 1460630). We read the account field list on 16 September 2026 and
+   confirmed it exists; a field with key "source" does not. */
 (function () {
   var meta = document.querySelector('meta[name="bsh:source"]');
   var src = meta && meta.content ? meta.content.trim() : '';
@@ -16,10 +16,10 @@
     var forms = document.querySelectorAll('.ml-embedded form');
     for (var i = 0; i < forms.length; i++) {
       var f = forms[i];
-      if (f.querySelector('input[name="fields[source]"]')) continue;
+      if (f.querySelector('input[name="fields[signup_source]"]')) continue;
       var input = document.createElement('input');
       input.type = 'hidden';
-      input.name = 'fields[source]';
+      input.name = 'fields[signup_source]';
       input.value = src;
       f.appendChild(input);
     }
