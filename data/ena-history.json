@@ -2516,6 +2516,674 @@
     }
    ],
    "changed": []
+  },
+  {
+   "read_at": "2026-09-24T23:07",
+   "stamp": "24 September 2026 at 23:07",
+   "count": 79,
+   "compliant": 71,
+   "note": "Automated reading. The list grew from 64 unique entries to 79 in the eight days since our previous reading: 19 new entries and 4 no longer present, with no change of status on any entry we already held. 71 of the 79 entries are marked Compliant and 8 are marked Non-compliant; on 16 September the split was 56 and 8. All four entries no longer present had been marked Non-compliant: ECOFL/21128/V1/A1, MODUL/21440/V1, MODUL/21443/V1/A1 and WORLD/21444/V1; Worldwide Solar now has no entry. EcoFlow's two new entries, ECOFL/21128/V1/A3 and ECOFL/21606/V1/A1, are marked Compliant. TSUNESS, which had no entry in our previous reading, returns with three entries marked Compliant. Longshen, Plugsol, The Solar Home, VALE, Voltacon and Zendure appear in our log for the first time. The search API returned 80 rows but only 79 distinct device references: TSUNE/21485/V1/A2 came back twice, byte-identical. We count distinct references. The register now holds 9,626 entries in total; we scanned 1,100 to reach back past the date the Plug-in Solar type was introduced. 7 of the new entries carry a PublishedDate of 15 or 16 September, on or before the day we read the register at 23:02 on 16 September, and were not returned to us then; the register's indexing is its own and we do not guess at reasons.",
+   "devices": [
+    {
+     "ref": "ECOFL/21128/V1/A3",
+     "manufacturer": "EcoFlow Inc.",
+     "model": "EFStreamPlug-inSolarkit-UK-FlatRoof /  EFStreamPlug-inSolarKit-UK-Facade /  EFStreamPlug-inSolarKit-UK-PitchedRoof",
+     "kw": 0.8,
+     "published": "2026-09-22",
+     "status": "Compliant"
+    },
+    {
+     "ref": "ECOFL/21606/V1/A1",
+     "manufacturer": "EcoFlow Inc.",
+     "model": "EF-PS-800 + SPDG505-N108R12  Plug-In Solar Kit",
+     "kw": 0.8,
+     "published": "2026-09-22",
+     "status": "Compliant"
+    },
+    {
+     "ref": "SHENZP/20723/V2",
+     "manufacturer": "shenzhen longshen energy technology co., ltd",
+     "model": "LS-800Mi",
+     "kw": 0.8,
+     "published": "2026-09-22",
+     "status": "Non-compliant"
+    },
+    {
+     "ref": "ZENDU/21472/V1/A1",
+     "manufacturer": "zendure technology co., limited",
+     "model": "SolarFlow 800 + 2*Solar Panels + 2*Floor Brackets",
+     "kw": 0.8,
+     "published": "2026-09-21",
+     "status": "Compliant"
+    },
+    {
+     "ref": "ZENDU/21470/V1/A1",
+     "manufacturer": "zendure technology co., limited",
+     "model": "SolarFlow 800 + 2*Solar Panels + 1*4 Extension MC4 Cables + 2*Wall Brackets",
+     "kw": 0.8,
+     "published": "2026-09-21",
+     "status": "Compliant"
+    },
+    {
+     "ref": "ZENDU/21473/V1/A1",
+     "manufacturer": "zendure technology co., limited",
+     "model": "SolarFlow 800 + 2*Solar Panels + 2*Wall Brackets",
+     "kw": 0.8,
+     "published": "2026-09-21",
+     "status": "Compliant"
+    },
+    {
+     "ref": "ZENDU/21469/V1/A1",
+     "manufacturer": "zendure technology co., limited",
+     "model": "SolarFlow 800 + 2*Solar Panels + 1*4 Extension MC4 Cables + 2*Floor Brackets",
+     "kw": 0.8,
+     "published": "2026-09-21",
+     "status": "Compliant"
+    },
+    {
+     "ref": "ZENDU/21471/V1/A1",
+     "manufacturer": "zendure technology co., limited",
+     "model": "SolarFlow 800 + 2*Solar Panels + 1*4 Extension MC4 Cables + 2*Balcony Brackets",
+     "kw": 0.8,
+     "published": "2026-09-21",
+     "status": "Compliant"
+    },
+    {
+     "ref": "ZENDU/21474/V1/A1",
+     "manufacturer": "zendure technology co., limited",
+     "model": "SolarFlow 800 + 2*Solar Panels + 2*Balcony Brackets",
+     "kw": 0.8,
+     "published": "2026-09-21",
+     "status": "Compliant"
+    },
+    {
+     "ref": "MODUL/21443/V1/A3",
+     "manufacturer": "modular solar technologies limited",
+     "model": "475W Modular Solar Unit 400W inverter",
+     "kw": 0.4,
+     "published": "2026-09-17",
+     "status": "Compliant"
+    },
+    {
+     "ref": "MODUL/21440/V1/A1",
+     "manufacturer": "modular solar technologies limited",
+     "model": "340W Modular Solar Unit 400W inverter",
+     "kw": 0.34,
+     "published": "2026-09-17",
+     "status": "Compliant"
+    },
+    {
+     "ref": "PERLI/21554/V1",
+     "manufacturer": "perlight solar co., ltd.",
+     "model": "Perlight PowerPlug+ MAX 465 - PLM-PPM-M2-465",
+     "kw": 0.8,
+     "published": "2026-09-17",
+     "status": "Compliant"
+    },
+    {
+     "ref": "PLUGS/21457/V1/A1",
+     "manufacturer": "plugsol limited",
+     "model": "Plugsol Light - Hoymiles Inverter HMS-800-2WB",
+     "kw": 0.8,
+     "published": "2026-09-16",
+     "status": "Non-compliant"
+    },
+    {
+     "ref": "VOLTD/21533/V1",
+     "manufacturer": "voltacon uk limited",
+     "model": "BYM500",
+     "kw": 0.8,
+     "published": "2026-09-16",
+     "status": "Non-compliant"
+    },
+    {
+     "ref": "VALEG/21503/V1",
+     "manufacturer": "VALE GmbH",
+     "model": "VALE Plug-In Solar 900Wp EF-PS-800 3in1 Mounting Kit - VA-PIS-900-EF-PS-800-3in1",
+     "kw": 0.8,
+     "published": "2026-09-15",
+     "status": "Compliant"
+    },
+    {
+     "ref": "THESP/21507/V1",
+     "manufacturer": "the solar home",
+     "model": "LS-800Mi",
+     "kw": 0.8,
+     "published": "2026-09-15",
+     "status": "Non-compliant"
+    },
+    {
+     "ref": "TSUNE/21485/V1/A2",
+     "manufacturer": "TSUNESS Co., Ltd",
+     "model": "TSOL-ESK800-Air(V)",
+     "kw": 0.8,
+     "published": "2026-09-15",
+     "status": "Compliant"
+    },
+    {
+     "ref": "TSUNE/21484/V1/A1",
+     "manufacturer": "TSUNESS Co., Ltd",
+     "model": "TSOL-ESK800",
+     "kw": 0.8,
+     "published": "2026-09-15",
+     "status": "Compliant"
+    },
+    {
+     "ref": "TSUNE/21103/V1/A4",
+     "manufacturer": "TSUNESS Co., Ltd",
+     "model": "TSOL-ESK800-U",
+     "kw": 0.8,
+     "published": "2026-09-15",
+     "status": "Compliant"
+    },
+    {
+     "ref": "THESO/21438/V1",
+     "manufacturer": "the solar centre",
+     "model": "The Solar Centre Plug-In Solar 2 Panel Kit",
+     "kw": 0.8,
+     "published": "2026-09-10",
+     "status": "Compliant"
+    },
+    {
+     "ref": "THESO/21194/V1",
+     "manufacturer": "the solar centre",
+     "model": "The Solar Centre Plug-In Solar 1 Panel Kit",
+     "kw": 0.8,
+     "published": "2026-09-10",
+     "status": "Compliant"
+    },
+    {
+     "ref": "SIGEN/21404/V1",
+     "manufacturer": "Sigenergy",
+     "model": "Sigen Plug-in PV 800",
+     "kw": 0.8,
+     "published": "2026-09-09",
+     "status": "Non-compliant"
+    },
+    {
+     "ref": "SIGEN/21402/V1",
+     "manufacturer": "Sigenergy",
+     "model": "Sigen Plug-in PV 400",
+     "kw": 0.4,
+     "published": "2026-09-09",
+     "status": "Non-compliant"
+    },
+    {
+     "ref": "SIGEN/21403/V1",
+     "manufacturer": "Sigenergy",
+     "model": "Sigen Plug-in PV 500",
+     "kw": 0.5,
+     "published": "2026-09-09",
+     "status": "Non-compliant"
+    },
+    {
+     "ref": "SEGEN/21400/V1",
+     "manufacturer": "segen",
+     "model": "PIS-FE-SO-66H-470",
+     "kw": 0.8,
+     "published": "2026-09-09",
+     "status": "Compliant"
+    },
+    {
+     "ref": "CITYP/21388/V1",
+     "manufacturer": "city plumbing supplies holdings ltd",
+     "model": "CPS 1x DME-465W-BW-1 + Hoymiles HF-800-WB Plug-In Solar Kit - DME-465W-BW-1",
+     "kw": 0.8,
+     "published": "2026-09-08",
+     "status": "Compliant"
+    },
+    {
+     "ref": "CITYP/21392/V1",
+     "manufacturer": "city plumbing supplies holdings ltd",
+     "model": "CPS 1x DME-475W-BW-1 + Hoymiles HF-800-WB Plug-In Solar Kit - DME-475W-BW-1",
+     "kw": 0.8,
+     "published": "2026-09-08",
+     "status": "Compliant"
+    },
+    {
+     "ref": "CITYP/21389/V1",
+     "manufacturer": "city plumbing supplies holdings ltd",
+     "model": "CPS 1x DME-515W-BW-1 + Hoymiles HF-800-WB Plug-In Solar Kit - DME-515W-BW-1",
+     "kw": 0.8,
+     "published": "2026-09-08",
+     "status": "Compliant"
+    },
+    {
+     "ref": "CITYP/21391/V1",
+     "manufacturer": "city plumbing supplies holdings ltd",
+     "model": "CPS 1x DME-525W-BW-1 + Hoymiles HF-800-WB Plug-In Solar Kit - DME-525W-BW-1",
+     "kw": 0.8,
+     "published": "2026-09-08",
+     "status": "Compliant"
+    },
+    {
+     "ref": "CITYP/21390/V1",
+     "manufacturer": "city plumbing supplies holdings ltd",
+     "model": "CPS 1x JNK-470W-BW-1 + Hoymiles HF-800-WB Plug-In Solar Kit - JNK-470W-BW-1",
+     "kw": 0.8,
+     "published": "2026-09-08",
+     "status": "Compliant"
+    },
+    {
+     "ref": "OCTOQ/21124/V1/A5",
+     "manufacturer": "octopus energy",
+     "model": "M1-800-E",
+     "kw": 0.8,
+     "published": "2026-09-08",
+     "status": "Compliant"
+    },
+    {
+     "ref": "PERLI/21206/V1/A1",
+     "manufacturer": "perlight solar co., ltd.",
+     "model": "Perlight PowerPlug FLEX 465 - PLM-PPF-SPE-465",
+     "kw": 0.5,
+     "published": "2026-09-07",
+     "status": "Compliant"
+    },
+    {
+     "ref": "PERLI/21208/V1/A1",
+     "manufacturer": "perlight solar co., ltd.",
+     "model": "Perlight PowerPlug 500 - PLM-PPM-SPE-500",
+     "kw": 0.5,
+     "published": "2026-09-07",
+     "status": "Compliant"
+    },
+    {
+     "ref": "PERLI/21207/V1/A1",
+     "manufacturer": "perlight solar co., ltd.",
+     "model": "Perlight PowerPlug FLEX 500 - PLM-PPF-SPE-500",
+     "kw": 0.5,
+     "published": "2026-09-07",
+     "status": "Compliant"
+    },
+    {
+     "ref": "PERLI/21205/V1/A1",
+     "manufacturer": "perlight solar co., ltd.",
+     "model": "Perlight PowerPlug 465 - PLM-PPM-SPE-465",
+     "kw": 0.5,
+     "published": "2026-09-07",
+     "status": "Compliant"
+    },
+    {
+     "ref": "SHENZR/21385/V1",
+     "manufacturer": "shenzhen skyworth photovoltaic technology co., ltd.",
+     "model": "SWBS-T900-800",
+     "kw": 0.8,
+     "published": "2026-09-07",
+     "status": "Compliant"
+    },
+    {
+     "ref": "ALTEN/21341/V1/A1",
+     "manufacturer": "ALTENERGY POWER SYSTEM INC.",
+     "model": "Premium Set Single-510W-Full black",
+     "kw": 0.5,
+     "published": "2026-09-07",
+     "status": "Compliant"
+    },
+    {
+     "ref": "HDMSO/21296/V1/A1",
+     "manufacturer": "hdm solar ltd",
+     "model": "PSK2000",
+     "kw": 0.8,
+     "published": "2026-09-04",
+     "status": "Compliant"
+    },
+    {
+     "ref": "SHENZR/21342/V1",
+     "manufacturer": "shenzhen skyworth photovoltaic technology co., ltd.",
+     "model": "SVBS-T900-800",
+     "kw": 0.8,
+     "published": "2026-09-04",
+     "status": "Compliant"
+    },
+    {
+     "ref": "POWEZA/21077/V1/A1",
+     "manufacturer": "powerxpress ltd",
+     "model": "PowerXpress Plug-in Solar 920W 2 Panels + Mounting Kit — 90012",
+     "kw": 0.8,
+     "published": "2026-09-03",
+     "status": "Compliant"
+    },
+    {
+     "ref": "THEIM/21302/V1/A1",
+     "manufacturer": "the impact crowd limited",
+     "model": "Impact Plug-in Solar V1",
+     "kw": 0.8,
+     "published": "2026-09-03",
+     "status": "Compliant"
+    },
+    {
+     "ref": "CITYP/21286/V1/A1",
+     "manufacturer": "city plumbing supplies holdings ltd",
+     "model": "CPS 2x DME-525W-BW-2 + Hoymiles HMS-800-2WB Plug-In Solar Kit - DME-525W-BW-2",
+     "kw": 0.8,
+     "published": "2026-09-03",
+     "status": "Compliant"
+    },
+    {
+     "ref": "CITYP/21281/V1/A1",
+     "manufacturer": "city plumbing supplies holdings ltd",
+     "model": "CPS 2x DME-525W-BW-1 + Hoymiles HF-800-WB Plug-In Solar Kit - DME-525W-BW-1",
+     "kw": 0.8,
+     "published": "2026-09-03",
+     "status": "Compliant"
+    },
+    {
+     "ref": "CITYP/21277/V1/A1",
+     "manufacturer": "city plumbing supplies holdings ltd",
+     "model": "CPS 2x DME-515W + Hoymiles HF-800-WB Plug-In Solar Kit - DME-515W-BW-1",
+     "kw": 0.8,
+     "published": "2026-09-03",
+     "status": "Compliant"
+    },
+    {
+     "ref": "CITYP/21282/V1/A1",
+     "manufacturer": "city plumbing supplies holdings ltd",
+     "model": "CPS 2x DME-475W-BW-1 + Hoymiles HF-800-WB Plug-In Solar Kit - DME-475W-BW-1",
+     "kw": 0.8,
+     "published": "2026-09-03",
+     "status": "Compliant"
+    },
+    {
+     "ref": "CITYP/21288/V1/A1",
+     "manufacturer": "city plumbing supplies holdings ltd",
+     "model": "CPS 2x JNK-470W-BW-2 + Hoymiles HMS-800-2WB Plug-In Solar Kit - JNK-470W-BW-2",
+     "kw": 0.8,
+     "published": "2026-09-03",
+     "status": "Compliant"
+    },
+    {
+     "ref": "CITYP/21283/V1/A1",
+     "manufacturer": "city plumbing supplies holdings ltd",
+     "model": "CPS 2x DME-475W-BW-2 + Hoymiles HMS-800-2WB Plug-In Solar Kit - DME-475W-BW-2",
+     "kw": 0.8,
+     "published": "2026-09-03",
+     "status": "Compliant"
+    },
+    {
+     "ref": "CITYP/21275/V1/A1",
+     "manufacturer": "city plumbing supplies holdings ltd",
+     "model": "CPS 2x JKM470N-48QL6-DB + Hoymiles HF-800-WB Plug-In Solar Kit - JNK-470W-BW-1 V1.0",
+     "kw": 0.8,
+     "published": "2026-09-03",
+     "status": "Compliant"
+    },
+    {
+     "ref": "HDMSO/21245/V1/A3",
+     "manufacturer": "hdm solar ltd",
+     "model": "PSK1000",
+     "kw": 0.8,
+     "published": "2026-09-02",
+     "status": "Compliant"
+    },
+    {
+     "ref": "ALTEN/21303/V1",
+     "manufacturer": "ALTENERGY POWER SYSTEM INC.",
+     "model": "Premium Set Dual-1020W-Full black",
+     "kw": 0.799,
+     "published": "2026-09-02",
+     "status": "Compliant"
+    },
+    {
+     "ref": "PATIO/21299/V1",
+     "manufacturer": "patiosun ",
+     "model": "PatioSun Max+",
+     "kw": 0.8,
+     "published": "2026-09-01",
+     "status": "Compliant"
+    },
+    {
+     "ref": "PATIO/21294/V1",
+     "manufacturer": "patiosun ",
+     "model": "PatioSun Lite+",
+     "kw": 0.8,
+     "published": "2026-09-01",
+     "status": "Compliant"
+    },
+    {
+     "ref": "PATIO/21289/V1",
+     "manufacturer": "patiosun ",
+     "model": "PatioSun Duo+",
+     "kw": 0.8,
+     "published": "2026-09-01",
+     "status": "Compliant"
+    },
+    {
+     "ref": "PATIO/21261/V1/A1",
+     "manufacturer": "patiosun ",
+     "model": "PatioSun Max",
+     "kw": 0.8,
+     "published": "2026-09-01",
+     "status": "Compliant"
+    },
+    {
+     "ref": "PATIO/21264/V1/A1",
+     "manufacturer": "patiosun ",
+     "model": "PatioSun Lite",
+     "kw": 0.8,
+     "published": "2026-09-01",
+     "status": "Compliant"
+    },
+    {
+     "ref": "PATIO/21026/V1/A2",
+     "manufacturer": "patiosun ",
+     "model": "PatioSun Duo",
+     "kw": 0.8,
+     "published": "2026-09-01",
+     "status": "Compliant"
+    },
+    {
+     "ref": "MODUL/21169/V1/A1",
+     "manufacturer": "modular solar technologies limited",
+     "model": "475W Solar Unit",
+     "kw": 0.475,
+     "published": "2026-08-31",
+     "status": "Compliant"
+    },
+    {
+     "ref": "MODUL/21168/V1/A1",
+     "manufacturer": "modular solar technologies limited",
+     "model": "340W Solar Unit",
+     "kw": 0.34,
+     "published": "2026-08-31",
+     "status": "Compliant"
+    },
+    {
+     "ref": "CITYP/21096/V1/A4",
+     "manufacturer": "city plumbing supplies holdings ltd",
+     "model": "CPS 2x DM465G12RT-G48HBB + Hoymiles HF-800-WB Plug-In Solar Kit  - DME-465W-2 V1.0",
+     "kw": 0.8,
+     "published": "2026-08-28",
+     "status": "Compliant"
+    },
+    {
+     "ref": "INSTA/21105/V1/A1",
+     "manufacturer": "InstaGroup",
+     "model": "INS-PPG-435",
+     "kw": 0.8,
+     "published": "2026-08-28",
+     "status": "Compliant"
+    },
+    {
+     "ref": "THUNE/21203/V1",
+     "manufacturer": "thunder energy",
+     "model": "Thunder Bolt 460W",
+     "kw": 0.8,
+     "published": "2026-08-27",
+     "status": "Compliant"
+    },
+    {
+     "ref": "THUNE/21204/V1",
+     "manufacturer": "thunder energy",
+     "model": "Thunder Bolt 920W",
+     "kw": 0.8,
+     "published": "2026-08-27",
+     "status": "Compliant"
+    },
+    {
+     "ref": "PERLI/21200/V1",
+     "manufacturer": "perlight solar co., ltd.",
+     "model": "Perlight PowerPlug FLEX+ 500 - PLM-PPF-M-500",
+     "kw": 0.8,
+     "published": "2026-08-27",
+     "status": "Compliant"
+    },
+    {
+     "ref": "PERLI/21202/V1",
+     "manufacturer": "perlight solar co., ltd.",
+     "model": "Perlight PowerPlug FLEX+ 930 - PLM-PPF-M-930",
+     "kw": 0.8,
+     "published": "2026-08-27",
+     "status": "Compliant"
+    },
+    {
+     "ref": "PERLI/21201/V1",
+     "manufacturer": "perlight solar co., ltd.",
+     "model": "Perlight PowerPlug FLEX+ 465 - PLM-PPF-M-465",
+     "kw": 0.8,
+     "published": "2026-08-27",
+     "status": "Compliant"
+    },
+    {
+     "ref": "PERLI/21199/V1",
+     "manufacturer": "perlight solar co., ltd.",
+     "model": "Perlight PowerPlug FLEX+ 1000 - PLM-PPF-M-1000",
+     "kw": 0.8,
+     "published": "2026-08-27",
+     "status": "Compliant"
+    },
+    {
+     "ref": "PERLI/21198/V1",
+     "manufacturer": "perlight solar co., ltd.",
+     "model": "Perlight PowerPlug MAX 1000 - PLM-PPM-M-1000",
+     "kw": 0.8,
+     "published": "2026-08-27",
+     "status": "Compliant"
+    },
+    {
+     "ref": "PERLI/21196/V1",
+     "manufacturer": "perlight solar co., ltd.",
+     "model": "Perlight PowerPlug MAX 930 - PLM-PPM-M-930",
+     "kw": 0.8,
+     "published": "2026-08-27",
+     "status": "Compliant"
+    },
+    {
+     "ref": "PERLI/21197/V1",
+     "manufacturer": "perlight solar co., ltd.",
+     "model": "Perlight PowerPlug MAX 500 - PLM-PPM-M-500",
+     "kw": 0.8,
+     "published": "2026-08-27",
+     "status": "Compliant"
+    },
+    {
+     "ref": "INSTA/20951/V1/A9",
+     "manufacturer": "InstaGroup",
+     "model": "INS-PPG-800",
+     "kw": 0.8,
+     "published": "2026-08-27",
+     "status": "Compliant"
+    },
+    {
+     "ref": "INSTA/21195/V1/A1",
+     "manufacturer": "InstaGroup",
+     "model": "INS-PPG2-800",
+     "kw": 0.8,
+     "published": "2026-08-27",
+     "status": "Non-compliant"
+    },
+    {
+     "ref": "PERLI/21158/V1",
+     "manufacturer": "perlight solar co., ltd.",
+     "model": "Perlight PowerPlug MAX 465 - PLM-PPM-M-465",
+     "kw": 0.8,
+     "published": "2026-08-27",
+     "status": "Compliant"
+    },
+    {
+     "ref": "UKSOL/21014/V1/A4",
+     "manufacturer": "uksol ltd",
+     "model": "UKSOL Plug-In Solar Pro Advanced 920W Two Panel Hybrid Mount Kit - UKS-PRO-A-2-920-MZ1 /-HYM",
+     "kw": 0.8,
+     "published": "2026-08-19",
+     "status": "Compliant"
+    },
+    {
+     "ref": "UKSOL/21008/V1/A4",
+     "manufacturer": "uksol ltd",
+     "model": "UKSOL Plug-In Solar Pro Compact 515W Single Panel Hybrid Mount Kit - UKS-PRO-C-1-515-MZ1 /- HYM",
+     "kw": 0.8,
+     "published": "2026-08-18",
+     "status": "Compliant"
+    },
+    {
+     "ref": "UKSOL/21013/V1/A2",
+     "manufacturer": "uksol ltd",
+     "model": "UKSOL Plug-In Solar Pro Max 1260W Two Panel Hybrid Mount Kit - UKS-PRO-M-2-1260-MZ1 / - HYM",
+     "kw": 0.8,
+     "published": "2026-08-18",
+     "status": "Compliant"
+    },
+    {
+     "ref": "UKSOL/21012/V1/A3",
+     "manufacturer": "uksol ltd",
+     "model": "UKSOL Plug-In Solar Pro Plus 1030W Two Panel Hybrid Mount Kit - UKS-PRO-P-2-1030-MZ1 / - HYM",
+     "kw": 0.8,
+     "published": "2026-08-18",
+     "status": "Compliant"
+    },
+    {
+     "ref": "UKSOL/21003/V1/A2",
+     "manufacturer": "uksol ltd",
+     "model": "UKSOL Plug-In Solar Pro Duo 890W Two Panel Ground Mount Kit - UKS-PRO-D-2-890-MZ1-UKG",
+     "kw": 0.8,
+     "published": "2026-08-18",
+     "status": "Compliant"
+    },
+    {
+     "ref": "UKSOL/21002/V1/A2",
+     "manufacturer": "uksol ltd",
+     "model": "UKSOL Plug-In Solar Pro Compact 460W Single Panel Ground Mount Kit - UKS-PRO-C-1-460-MZ1-UKG",
+     "kw": 0.8,
+     "published": "2026-08-18",
+     "status": "Compliant"
+    },
+    {
+     "ref": "UKSOL/21007/V1/A3",
+     "manufacturer": "uksol ltd",
+     "model": "UKSOL Plug-In Solar Pro Duo 890W Two Panel Hybrid Mount Kit - UKS-PRO-D-2-890-MZ1 /- HYM",
+     "kw": 0.8,
+     "published": "2026-08-18",
+     "status": "Compliant"
+    }
+   ],
+   "removed": [
+    {
+     "ref": "ECOFL/21128/V1/A1",
+     "manufacturer": "EcoFlow Inc.",
+     "model": "EFStreamPlug-inSolarkit-UK-FlatRoof /  EFStreamPlug-inSolarKit-UK-Facade /  EFStreamPlug-inSolarKit-UK-PitchedRoof",
+     "status": "Non-compliant"
+    },
+    {
+     "ref": "MODUL/21440/V1",
+     "manufacturer": "modular solar technologies limited",
+     "model": "340W Modular Solar Unit 400W inverter",
+     "status": "Non-compliant"
+    },
+    {
+     "ref": "MODUL/21443/V1/A1",
+     "manufacturer": "modular solar technologies limited",
+     "model": "475W Modular Solar Unit 400W inverter",
+     "status": "Non-compliant"
+    },
+    {
+     "ref": "WORLD/21444/V1",
+     "manufacturer": "worldwide solar ltd",
+     "model": "Worldwide Solar Plug-in Solar Kit – VaySunic VM800WE-P2 + 2 Compatible Solar Panels (400–750W each) + Mounting System",
+     "status": "Non-compliant"
+    }
+   ],
+   "changed": []
   }
  ]
 }
